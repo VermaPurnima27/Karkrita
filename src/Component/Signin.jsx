@@ -3,11 +3,13 @@ import './Signin.css';
 
 import { FcGoogle } from "react-icons/fc";
 import { FaPhone } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 
 export default function Signin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const[showPassword,setShowPassword] = useState(false);
 
 
 
@@ -25,9 +27,10 @@ export default function Signin() {
             <p className='heading'>Log in to your Desi world</p>
 
             <span className='s1'>Email:</span>
-            <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" name="email1" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
             <span className='s2'>Password:</span>
-            <input type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input type="password" name="password1" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+            <span className='eye-icon1' onClick={() => setShowPassword(!showPassword)}>{showPassword ? <FaEyeSlash /> : <FaEye />}</span>
             <div className="social-btn">
               <button className="google-btn">
                 <span className='logo-ggl' >

@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f0e7e1;
+    overflow-y: scroll;
+    
 }
 
 .container {
@@ -18,32 +20,30 @@ body {
     background-color:  rgb(251, 228, 198);
     padding: 20px;
     border-radius: 25px;
-
     text-align: center;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0, 1);
 }
 
 .card h1 {
     color: #6b3e26;
-    
     font-family: 'Times New Roman';
     font-weight: bold;
 
 }
 
-.form-box {
+.input-box {
     height: 40 vh;
     width: 400px;
     background:#6b3e26;
-
+    position: relative;
     border-radius: 15px;
     padding: 15px;
     margin-top: 10px;
 
 }
 
-.heading {
-    color: #dc9766;
+.heading1 {
+    color:#dc9766;;
     font-size: 22px;
     font-weight: 3400;
     margin-bottom: 10px;
@@ -51,57 +51,76 @@ body {
 }
 
 
-.form-box input {
+
+.input-box input {
+   
    width:100% ;
     padding: 10px;
     margin: 8px 0;
     border-radius: 10px;
-    background-color: white;
-    border: none;
+    font-size: 20px;
+    background-color:white;
+    color:#4c3320;
+    border:2px solid white;
     font-family: 'Times New Roman', Times, serif;
+    
     
 }
 
-.form-box ::placeholder {
+.eye-icon{
+    position: absolute;
+    right: 28px;
+    top: 41.5%;
+    transform: translateY(-50%);
+    color:#4c3320;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.input-box ::placeholder {
     color: #6b3e26;
     font-size: 16px;
+    
 }
 
 
 
-.s1 {
+.inputhead1 {
     padding-right: 179px;
-    color:  #dc9766;
+    
+    color:#dc9766; 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: -90px;
     font-weight: 3400;
 }
 
-.s2{
+.inputhead2{
     padding-right: 160px;
-    color:  #dc9766;
+    
+    color:#dc9766;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: -90px;
 }
 
-.s3{
+.inputhead3{
     padding-right: 160px;
-    color:  #dc9766;
+    
+    color:#dc9766;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 18px;
     margin-left: -90px;
 }
 
 
-.social-btn {
+.social-btn1 {
    justify-content: space-between;
    margin-top: 40px;
 }
 
 
-.google-btn{
+.google-btn1{
     color: #6b3e26;
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -110,7 +129,7 @@ body {
 }
 
 
-.phone-btn{
+.phone-btn1{
     color: #6b3e26;
     background-color:white;
     font-family: 'Times New Roman', Times, serif;
@@ -120,7 +139,7 @@ body {
 }
 
 
-.acc-btn {
+.acc-btn1 {
     margin-top: 20px;
     margin-left: 100px;
     background-color:#6b3e26;
@@ -132,14 +151,14 @@ body {
     border: #6b3e26;
 }
 
-.acc-btn:hover{
+.acc-btn1:hover{
     background-color: #4c3320;
     border:4px solid rgb(202, 186, 164);
 }
 
 
 
-.logo-ggl{
+.logo-ggl1{
     justify-content: center;
     align-items: center;
     padding-right: 20px;
@@ -147,7 +166,7 @@ body {
 
 }
 
-.logo-phn{
+.logo-phn1{
     justify-content: center;
     align-items: center;
     padding-right: 20px;
