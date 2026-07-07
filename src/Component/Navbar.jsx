@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faMagnifyingGlass, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import desilogo from "../component/image/desilogo.png";
+import desilogo from "../Component/image/desilogo.png";
 
 export default function Navbar() {
   const [search, setSearch] = useState('');
