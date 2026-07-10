@@ -11,13 +11,13 @@
    height: 100px;
    background-color: white;
    display: flex;
+   justify-content: space-between;
    align-items: center;
    color: rgb(41, 24, 24);
    width: 100%;
    position: fixed;
    top: 0;
    left: 0;
-
    z-index: 9999;   /* Add this */
 }
 
@@ -195,20 +195,44 @@ border: 2px solid rgb(73, 44, 44);
 }
 
 
-.nav-search {
-   display: flex;
-   align-items: center;
-}
 
+
+
+/*
 .nav-search input{
    width: 900px;
    height: 40px;
    border: 2px solid rgb(41, 24, 24);
    
-   background-color:  rgb(247, 234, 229);/*aliceblue  rgb(226, 204, 182)*/
+   background-color:  rgb(247, 234, 229 )aliceblue  rgb(226, 204, 182)
    color: #0f0733;
    padding-left: 4px;
 }
+
+*/
+
+
+
+.nav-search{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 900px;
+    margin: 0 15px;
+    
+    background-color: pink;
+    color: #0f0733;
+}
+.nav-search input{
+   border: 2px solid rgb(41, 24, 24);
+    width: 100%;
+    height: 40px;
+   color: #0f0733;
+   padding-left: 4px;
+}
+
+
+
 
 .nav-search select{
 height: 40px;
@@ -260,4 +284,118 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
 .nav-right {
    position: relative;
    display: inline-block;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+
+    .nav-search{
+        max-width:650px;
+    }
+
+    .Category-select{
+        width:120px;
+    }
+
+    .innerAccount span,
+    .nav-orders span{
+        font-size:18px;
+    }
+
+    .innerAccount p,
+    .nav-orders p{
+        font-size:14px;
+    }
+}
+
+
+
+@media (max-width:992px){
+
+    .navbar{
+        flex-wrap:wrap;
+        height:auto;
+        padding:10px;
+        gap:10px;
+    }
+
+    .nav-search{
+        order:3;
+        width:100%;
+        max-width:100%;
+        margin:10px 0;
+    }
+
+    .nav-logo{
+        height:50px;
+        margin:0;
+    }
+
+    .cart{
+        margin-right:0;
+    }
+}
+
+
+@media (max-width:768px){
+
+    .navbar{
+        justify-content:center;
+    }
+
+    .nav-search{
+        width:100%;
+    }
+
+    .Category-select{
+        width:100px;
+    }
+
+    .nav-search input{
+        font-size:14px;
+    }
+
+    .nav-orders{
+        display:none;
+    }
+
+    .navAdd{
+        display:none;
+    }
+
+    .innerAccount span{
+        font-size:16px;
+    }
+
+    .cart{
+        font-size:20px;
+    }
+}
+
+
+
+
+@media (max-width:480px){
+
+    .Category-select{
+        display:none;
+    }
+
+    .nav-search input{
+        width:100%;
+    }
+
+    .cart-count{
+        display:none;
+    }
+
+    .nav-logo{
+        height:45px;
+    }
 }

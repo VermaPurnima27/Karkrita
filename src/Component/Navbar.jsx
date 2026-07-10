@@ -108,7 +108,7 @@ export default function Navbar() {
         <div className="nav-right">
           <div className="innerAccount" onClick={toggleDropdown} ref={dropdownRef}>
             <p>please,Login</p>
-            <span>Account & List</span>
+            <span>Ac & List</span>
           </div>
 
           {open && (
