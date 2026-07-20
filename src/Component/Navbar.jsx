@@ -1,12 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faMagnifyingGlass, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faMagnifyingGlass, faShoppingCart,faBars } from '@fortawesome/free-solid-svg-icons';
 import desilogo from "../Component/image/desilogo.png";
+
+
 
 export default function Navbar() {
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState(''); // keep selected category
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -47,7 +51,7 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <img src={desilogo} alt="logo" className="nav-logo" />
-
+       
         <div className="navAdd">
           <div className="nav-address">
             <p className="add-first">Deliver to</p>
@@ -60,7 +64,7 @@ export default function Navbar() {
 
         <div className="nav-search">
           <select className="Category-select" onChange={handleCategoryChange} value={category}>
-            <option value="" disabled>Select category</option>
+        <option value="" disabled>Category</option>
             <optgroup label="office Essentials">
               <option value="Desk Accessories">Desk Accessories</option>
               <option value="Bookmarks & Bookends">Bookmarks & Bookends</option>
@@ -145,6 +149,18 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faShoppingCart} />
           <span className="cart-count">Cart</span>
         </div>
+        {menuOpen && (
+  <div className="mobile-menu">
+    <a href="#">Home</a>
+    <a href="#">Categories</a>
+    <a href="#">About</a>
+    <a href="#">New Arrivals</a>
+    <a href="#">Best Sellers</a>
+    <a href="#">Artisans</a>
+    <a href="#">Orders</a>
+    <a href="#">Contact</a>
+  </div>
+)}
       </nav>
     </>
   );
