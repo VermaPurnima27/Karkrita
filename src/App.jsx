@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from './Component/Navbar';
+import Secondnav from './Component/Secondnav';
 //import About from './Component/About';
 import Home from './Component/Home';
-import newo from './Component/newo';
+
  //import Signin from './Component/Signin';
 //import Signup from './Component/Signup'
 //import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -13,6 +14,7 @@ export default function App() {
   return (
    <>
       <Navbar/>
+      <Secondnav/>
       {/*<About/>*/}
     {/*<Signin/>*/}
       {/*<Signup/>*/}

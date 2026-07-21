@@ -488,7 +488,7 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
        
     }
 
-    .innerAccount span
+    .innerAccount span,
     .nav-orders span{
         font-size:15px;
     }
@@ -589,3 +589,5 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
 }
 
 }
+
+
