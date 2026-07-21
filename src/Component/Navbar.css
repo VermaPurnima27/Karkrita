@@ -23,7 +23,7 @@
 
 .nav-logo{
    display: flex;
-   height: 60px;
+   height: 50px;
    margin: -4px 0px 0px 10px;
    border: 2px solid transparent;
 }
@@ -34,8 +34,10 @@
 
 .nav-address{
    display: flex;
+   height: 50px;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
    border:2px solid transparent;
 }
 
@@ -43,44 +45,41 @@
 .add-first{
    color:rgb(41, 24, 24);/*#cccccc*/
    font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: -5px;
    
 }
 
 .add-second{
    font-weight: 600;
-    font-size: 20px; 
+    font-size: 16px; 
 }
 
 .add-icon{
    display: flex;
    align-items: center;
-   font-size: 23px;
-   margin-left: -9px;
+   justify-content: center;
+   font-size: 16px;
+   margin-left: -4px;
 }
 
 .navAdd:hover{
 border: 2px solid rgb(73, 44, 44);
 }
 
-.navAdd{
-   height: 55px;
-   width: 80px;
-   padding-bottom: 1px;
-}
+
 
 
 .innerAccount p{
    font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom:-8px ;
 }
 
 
 .innerAccount span{
    font-weight: 600;
-   font-size: 20px;
+   font-size: 16px;
 
 }
 
@@ -162,20 +161,20 @@ border: 2px solid rgb(73, 44, 44);
 
 .nav-orders p{
     font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom:-8px ;
    
 }
 .nav-orders span{
    font-weight: 600;
-   font-size: 20px;
+   font-size: 16px;
 
 }
 
 .cart{
    position: relative;
    padding: 5px;
-   font-size: 24px;
+   font-size: 18px;
     font-weight: 600;
    cursor: pointer;
    background-color: rgb(228, 185, 159);/*rgb(209, 164, 104)*/
@@ -189,7 +188,7 @@ border: 2px solid rgb(73, 44, 44);
 }
 
 .cart-count{
-  font-size: 20px;
+  font-size: 16px;
    top: -8px;
    padding: 2px 8px 0px -9px;
 }
@@ -217,7 +216,7 @@ border: 2px solid rgb(73, 44, 44);
     display: flex;
     align-items: center;
     flex: 1;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 15px;
     
     background-color:white;
@@ -226,7 +225,7 @@ border: 2px solid rgb(73, 44, 44);
 .nav-search input{
    border: 2px solid rgb(41, 24, 24);
     width: 100%;
-    height: 40px;
+    height: 35px;
    color: #0f0733;
    padding-left: 4px;
 }
@@ -235,7 +234,7 @@ border: 2px solid rgb(73, 44, 44);
 
 
 .nav-search select{
-height: 40px;
+height: 35px;
 width: 150px;
 background-color: rgb(228, 185, 159);
 color: rgb(36, 27, 27);
@@ -247,13 +246,13 @@ color: rgb(36, 27, 27);
 }
 
 .search-btn{
-   height: 40px;
-   width: 40px;
+   height: 35px;
+   width: 35px;
    padding-left:8px ;
    padding-top: 5px;
    justify-content: center;
    align-items: center;
-   font-size: 20px;
+   font-size: 18px;
    /*background-color:#4f46E5;*/
    background-color:rgb(228, 185, 159);
    border:2px solid rgb(73, 44, 44) ;
@@ -278,7 +277,7 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
    background-color: antiquewhite;
    border: 2px solid rgb(73, 44, 44);
    border-radius: 4px 0 0 4px;
-
+       font-size: 14px;
         width:95px !important;
         min-width:95px;
         flex:0 0 95px;
@@ -381,7 +380,9 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
         flex:0 0 90px;
     }
     
-    
+    .nav-logo{
+        height: 40px;
+    }
 
     .innerAccount span,
     .nav-orders span{
@@ -468,6 +469,12 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
         margin-right:30px;
         
     }
+
+     .innerAccount span,
+    .nav-orders span{
+        font-size:18px;
+    }
+
 }
 
 
