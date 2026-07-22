@@ -149,18 +149,8 @@ export default function Navbar() {
           <FontAwesomeIcon icon={faShoppingCart} />
           <span className="cart-count">Cart</span>
         </div>
-        {menuOpen && (
-  <div className="mobile-menu">
-    <a href="#">Home</a>
-    <a href="#">Categories</a>
-    <a href="#">About</a>
-    <a href="#">New Arrivals</a>
-    <a href="#">Best Sellers</a>
-    <a href="#">Artisans</a>
-    <a href="#">Orders</a>
-    <a href="#">Contact</a>
-  </div>
-)}
+        
+
       </nav>
     </>
   );

@@ -218,7 +218,7 @@ border: 2px solid rgb(73, 44, 44);
     flex: 1;
     max-width: 800px;
     margin: 0 15px;
-    
+    height: 35px;
     background-color:white;
     color: #0f0733;
 }
@@ -248,7 +248,7 @@ color: rgb(36, 27, 27);
 .search-btn{
    height: 35px;
    width: 35px;
-   padding-left:8px ;
+   padding-left:4px ;
    padding-top: 5px;
    justify-content: center;
    align-items: center;
@@ -310,12 +310,12 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
 
 .innerAccount span,
     .nav-orders span{
-        font-size:20px;
+        font-size:16px;
     }
 
     .innerAccount p,
     .nav-orders p{
-        font-size:16px;
+        font-size:14px;
     }
 
 }
@@ -333,12 +333,12 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
 
 .innerAccount span,
     .nav-orders span{
-        font-size:19px;
+        font-size:16px;
     }
 
     .innerAccount p,
     .nav-orders p{
-        font-size:15px;
+        font-size:14px;
     }
 
 }
@@ -353,9 +353,13 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
     width: 100px;
 }
 
+.nav-logo{
+    height: 42px;
+}
+
 .innerAccount span,
     .nav-orders span{
-        font-size:18px;
+        font-size:16px;
     }
 
     .innerAccount p,
@@ -386,12 +390,12 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
 
     .innerAccount span,
     .nav-orders span{
-        font-size:18px;
+        font-size:16px;
     }
 
     .innerAccount p,
     .nav-orders p{
-        font-size:16px;
+        font-size:14px;
     }
 }
 
@@ -405,25 +409,39 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
         padding:22px;
         gap:15px;
     }
+
+
+    .navbar{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 75px;          /* Fixed height */
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;     /* Wrap mat hone do */
+}
      
      .nav-search{
-        max-width:600px;
-         
-    }
-
-    .Category-select{
-        display: none;
+        max-width:450px;
+  
     }
       
+    .nav-search input{
+        font-size: 14px;
+  
+    }
     .nav-logo{
-        height:50px;
+        height:40px;
         margin:0;
     }
 
     .cart{
         margin-right:0;
         padding: 5px;
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .navAdd{
@@ -432,47 +450,98 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
     }
 
     .nav-address span{
-        font-size:18px ;
+        font-size:16px ;
     }
 
     .nav-address p{
-        font-size:16px;
+        font-size:14px;
     }
 }
 
 
 @media (max-width:990px){
 
-    .navbar{
-        flex-wrap:wrap;
-         height: 100px;
-        padding:14px;
-        gap:14px;
-    } 
+    
 
-    .navAdd{
-        height:45px;
+    .navbar{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 65px;          /* Fixed height */
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;     /* Wrap mat hone do */
+}
+
+    .nav-search input{
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .nav-search select{
+        height: 30px;
+    }
+
+    .search-btn{
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        padding-left:7px ;
+       padding-top: 2px;
+    }
+
+    .nav-address{
+        align-items: center;
+         height:45px;
         width:70px;
     }
 
-    
-    .add-icon{
-        font-size:16px ;
-        padding-left:8px ;
+    .navaddress span{
+        font-size:14px ;
     }
+
+    .navaddress p{
+        font-size:13px ;
+    }
+
+       .search-icon{
+        font-size: 15px;
+        
+       }
+
+    .add-icon{
+        font-size:15px ;
+        padding-left:4px ;
+    }
+
     .nav-address p{
-        font-size:15px;
+        font-size:13px;
     }
 
      .nav-search{
-        max-width:650px;
-        margin-right:30px;
+        max-width:600px;
+        
         
     }
 
-     .innerAccount span,
-    .nav-orders span{
-        font-size:18px;
+         .innerAccount span,
+        .nav-orders span{
+        font-size:14px;
+    }
+
+    .innerAccount p,
+    .nav-orders p{
+        font-size:13px;
+    }
+
+    .cart{
+        font-size: 14px;
+    }
+    .cart-count{
+        font-size: 14px;
     }
 
 }
@@ -481,17 +550,25 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
 
 @media (max-width:870px){
 
-    .navbar{
-        justify-content:center;
-    }
-
+   .navbar{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 65px;          /* Fixed height */
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;     /* Wrap mat hone do */
+}
     .nav-search{
         width:100%;
     }
 
     
     .nav-search input{
-        font-size:14px;
+        font-size:13px;
        
     }
 
@@ -501,7 +578,7 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
     }
 
     .cart{
-        font-size: 20px;
+        font-size: 16px;
         padding: 5px;
     }
 
@@ -510,12 +587,102 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
     }
 
      .nav-logo{
-        height:44px;
+        height:40px;
+    }
+
+    .nav-search select{
+       display: none;
+    }
+}
+
+@media (max-width:700px){
+
+   .navbar{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 65px;          /* Fixed height */
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;     /* Wrap mat hone do */
+    
+    
+}
+    .nav-search{
+        width:100%;
+        margin-left: -10px;
+    }
+
+    
+    .nav-search input{
+        font-size:12px;
+       
+    }
+
+    .innerAccount span,
+    .nav-orders span{
+        font-size:13px;
+    }
+
+    .innerAccount p,
+    .nav-orders p{
+        font-size:10px;
+    }
+
+    .navAdd{
+        margin-left: -10px;
+    }
+
+
+    .nav-address p{
+        font-size:10px ;
+    }
+
+    .nav-address span{
+        font-size:13px ;
+    }
+
+    .nav-address .add-icon{
+        font-size:13px ;
+    }
+
+    .nav-right{
+        margin-left: -10px;
+    }
+
+    .cart{
+        font-size: 13px;
+        padding: 5px;
+    }
+
+
+     .nav-logo{
+        height:35px;
+    }
+
+    .nav-search select{
+       display: none;
     }
 }
 
 
-@media (max-width:799px){
+@media (max-width:580px){
+
+    .navbar{
+
+        gap: 8px;
+    }
+    
+    
+    
+}
+    
+
+
+@media (max-width:530px){
 
 .navbar{
     position: fixed;
