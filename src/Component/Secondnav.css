@@ -1,17 +1,39 @@
-.secondNavbar{
+/* .secondNavbar{
 
-    height:45px;
+    height:35px;
 
-    background:#5C4033;
+    /* background:#5C4033; 
+    background-color: #452f26;
 
     display:flex;
-
+    
     align-items:center;
 
     padding:0 20px;
 
-    margin-top:100px;
+    margine top:100px; 
+    
 
+
+} */
+
+.secondNavbar{
+    position: fixed;
+    top: 100px;       /* First navbar ki height */
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #5d4037;
+    z-index: 999;
+}
+
+.secondNavbar{
+    position: fixed;
+    top: 100px;
+    height: 35px;
+    background-color: #452f26;
+    align-items: center;
+    padding: 0 20px;
 }
 
 .menuIcon{
@@ -21,6 +43,7 @@
     font-size:24px;
 
     cursor:pointer;
+    
 
 }
 
@@ -31,18 +54,21 @@
     gap:30px;
 
     margin-left:25px;
+    
+    
 
 }
 
 .menuLinks a{
 
-    color:white;
+    color:rgb(238, 236, 236);
 
-    text-decoration:none;
+     text-decoration:none;
 
-    font-size:16px;
+    font-size:18px;
 
     transition:.3s;
+    font-family: 'Playfair Display', serif; 
 
 }
 

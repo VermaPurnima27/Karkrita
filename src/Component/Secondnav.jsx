@@ -4,16 +4,14 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Secondnav() {
 
+  
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
       <div className="secondNavbar">
 
-        <div
-          className="menuIcon"
-          onClick={() => setMenuOpen(true)}
-        >
+        <div className="menuIcon" onClick={() => setMenuOpen(true)}>
           <FaBars />
         </div>
 
