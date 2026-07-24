@@ -57,6 +57,7 @@
 .add-second{
    font-weight: 600;
     font-size: 18px;
+    color:rgb(66, 44, 44);/*#cccccc*/
     font-family: 'Playfair Display', serif; 
 }
 
@@ -244,7 +245,7 @@ border: 2px solid rgb(73, 44, 44);
    border: 2px solid rgb(41, 24, 24);
     width: 100%;
     height: 35px;
-   color: #0f0733;
+   color: solid rgb(41, 24, 24);
    padding-left: 4px;
    font-family: 'Playfair Display', serif ;
 }
@@ -256,7 +257,7 @@ border: 2px solid rgb(73, 44, 44);
 height: 35px;
 width: 150px;
 background-color: rgb(228, 185, 159);
-color: rgb(36, 27, 27);
+color: rgb(60, 39, 39);
 font-family: 'Playfair Display';
 font-size: 17px;
 font-weight: bolder;
