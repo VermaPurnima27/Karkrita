@@ -1,0 +1,54 @@
+.categorySection{
+
+    width:100%;
+    padding:60px 8%;
+    background:#fffaf6;
+}
+
+.categorySection h2{
+
+    text-align:center;
+    font-size:35px;
+    margin-bottom:40px;
+    color:#452f26;
+    font-family:'Playfair Display',serif;
+}
+
+.categoryContainer{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.categoryCard{
+
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.categoryCard:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.categoryCard img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.categoryCard h3{
+
+    text-align:center;
+    padding:18px;
+    color:#452f26;
+    font-size:22px;
+    font-family:'Playfair Display',serif;
+}

@@ -9,6 +9,7 @@ import bastarart51 from './image/bastarart51.webp';
 
 export default function About() {
   return (
+    <>
     <div>
       <div className="container">
         <div className="box1" >
@@ -36,6 +37,11 @@ export default function About() {
            <br />
         <button className='title-btn'>know more</button>
       </div>
+
+     
+       
+        
     </div>
+    </>
   )
 }

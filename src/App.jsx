@@ -1,8 +1,10 @@
 import React from 'react'
 import Navbar from './Component/Navbar';
 import Secondnav from './Component/Secondnav';
-//import About from './Component/About';
-import Home from './Component/Home';
+import About from './Component/About';
+// import CategorySection from './Component/CategorySection';
+
+//import Home from './Component/Home';
 
  //import Signin from './Component/Signin';
 //import Signup from './Component/Signup'
@@ -15,10 +17,12 @@ export default function App() {
    <>
       <Navbar/>
       <Secondnav/>
-      {/*<About/>*/}
+      <About/>
+      {/* <CategorySection /> */}
+      
     {/*<Signin/>*/}
       {/*<Signup/>*/}
-      <Home/>
+      {/* {<Home/>} */}
     </>
         
       

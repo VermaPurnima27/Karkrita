@@ -1,13 +1,14 @@
 *{
     
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Playfair Display', serif;/*  Arial ,Helvetica, sans-serif; */
     background: fixed;
     box-sizing: border-box;
+   
     
 }
 
-body{
-    
+ body{ 
+   
     justify-content: center;
     align-items: center;
 }
@@ -15,7 +16,7 @@ body{
 .container{
    position: fixed;
    top: 100px;
-   right: 70px;
+   right: 50px;
     width:800px;
     height: 900px;
     display: grid;
@@ -30,9 +31,9 @@ body{
 .box1{
     position: absolute;
     top: 90px;
-    left: 20px;
-    height: 350px;
-    width: 350px;
+    left: 160px;
+    height: 280px;
+    width: 280px;
     background-color: rgb(92, 73, 73);
     border: 1px solid transparent;
     border-radius: 20px;
@@ -41,11 +42,11 @@ body{
 
 .box2{
     position: absolute;
-    top: 130px;
+    top: 120px;
     right: 70px;
     background-color: rgb(92, 73, 73);
-    height: 280px;
-    width: 350px;
+    height: 250px;
+    width: 280px;
     border: 1px solid transparent;
     border-radius: 20px;
      
@@ -54,11 +55,11 @@ body{
 
 .box3{
     position: absolute;
-    bottom:170px ;
-    left: 20px;
+    bottom:270px ;
+    left: 160px;
     background-color: rgb(92, 73, 73);
-    height: 280px;
-    width: 350px;
+    height: 250px;
+    width: 280px;
     border: 1px solid transparent;
     border-radius: 20px; 
    
@@ -66,11 +67,11 @@ body{
 
 .box4{
     position: absolute;
-    bottom: 130px;
+    bottom: 240px;
     right: 70px;
-    height: 350px;
-    width: 350px;
-    background-color: rgb(92, 73, 73);
+    height: 280px;
+    width: 280px;
+    background-color: rgb(92, 73, 73);/*#452f26*/
     border: 1px solid transparent;
     border-radius: 20px;
     
@@ -80,8 +81,8 @@ body{
 .title{
     display: flexbox;
     position: fixed;
-    bottom: 190px;
-    left:170px;
+    top: 50px;
+    left:120px;
    
     height: 70vh;
     width: 40vw;
@@ -92,9 +93,10 @@ body{
 }
 
 .content{
- font-size: 80px;
- color: rgb(79, 57, 57);
- font-family:'Times New Roman', Times, serif;
+ font-size: 70px;
+ color:   rgb(79, 57, 57); 
+ font-family:'Playfair Display', serif;
+ /* 'Times New Roman', Times, serif; */
 }
 
 .title p{
@@ -105,9 +107,19 @@ body{
 
 .para{
     font-size: 22px;
+    color: #3e332a;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .title-btn{
-    background-color:#8B5E3C;
+    background-color:#e6b692;
+    color: rgb(52, 33, 33);
+    font-size: 18px;
+     border: 2px solid rgb(70, 44, 44);
+    
+}
+
+.title-btn:hover{
+    border: 2px solid rgb(70, 44, 44);
+    font-size: 16px;
 }
