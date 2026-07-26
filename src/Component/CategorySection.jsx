@@ -1,7 +1,7 @@
 import React from "react";
 import "./CategorySection.css";
 
-import iron from "../image/iron.jpg";
+import iron from "../image/";
 import saree from "../image/saree.jpg";
 import dhokra from "../image/dhokra.jpg";
 import terracotta from "../image/terracotta.jpg";

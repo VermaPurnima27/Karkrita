@@ -4,6 +4,7 @@ import bastarart2 from './image/bastarart2.webp';
 import bastarart4 from './image/bastarart4.webp';
 import bastarart5 from './image/bastar art5.webp';
 import bast3 from './image/bast3.webp';
+
 import bastarart51 from './image/bastarart51.webp';
 
 
@@ -36,11 +37,10 @@ export default function About() {
           Stand out by embracing culture in a modern way.”</h6>
            <br />
         <button className='title-btn'>know more</button>
+
+        
       </div>
 
-     
-       
-        
     </div>
     </>
   )
