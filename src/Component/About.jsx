@@ -11,8 +11,9 @@ import bastarart51 from './image/bastarart51.webp';
 export default function About() {
   return (
     <>
-    <div>
-      <div className="container">
+     <div> 
+      
+    <div className="container">
         <div className="box1" >
           <img src={bastarart2} alt="" style={{ width: "100%", height: "100%", borderRadius: "20px", border: "1px solid rgb(41, 24, 24)" }} />
         </div>

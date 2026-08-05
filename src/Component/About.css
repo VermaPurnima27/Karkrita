@@ -312,7 +312,7 @@ body{
 
 /* ================= Mobile ================= */
 
-@media(max-width:769px){
+@media(max-width:768px){
 
     .container{
     position:relative;
@@ -383,7 +383,71 @@ body{
     padding:10px 20px;
 
 }
+}
 
-media(max-width:580px){
+
+@media (max-width:580px){
+
+.container{
+    width:100%;
+    height:auto;
+    position:relative;
+    top:100px;
+    right:0;
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    justify-items:center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4{
+    position:static;
+    width:150px;
+    height:150px;
+}
+
+/* Title */
+
+.title{
+    position:relative;
+    width:100%;
+    left:0;
+    top:80px;
+
+    margin-top:30px;
+    margin-left:0;
+
+    padding:0 20px;
+    text-align:center;
+}
+
+.content{
+    font-size:32px;
+    line-height:1.2;
+}
+
+.title p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+.para{
+    font-size:14px;
+    line-height:1.6;
+    margin-top:15px;
+}
+
+.title-btn{
+    margin-top:-25px;
+    padding:0px 20px;
+    font-size:15px;
+    height:30px ;
+}
+
+
 
 }
