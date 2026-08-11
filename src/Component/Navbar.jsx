@@ -2,7 +2,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import './Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faMagnifyingGlass, faShoppingCart,faBars } from '@fortawesome/free-solid-svg-icons';
-import desilogo from "../Component/image/desilogo.png";
+//import desilogo from "../Component/image/desilogo.png";
+import karkriyaa from "../Component/image/karkriyaa.png";
 
 
 
@@ -50,7 +51,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <img src={desilogo} alt="logo" className="nav-logo" />
+        <img src={karkriyaa} alt="logo" className="nav-logo" />
        
         <div className="navAdd">
           <div className="nav-address">
