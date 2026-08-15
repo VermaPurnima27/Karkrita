@@ -18,7 +18,7 @@ export default function App() {
       <Navbar/>
       <Secondnav/>
       <About/>
-      {/* <CategorySection /> */}
+      {/* <CategorySection/> */}
       
     {/*<Signin/>*/}
       {/*<Signup/>*/}

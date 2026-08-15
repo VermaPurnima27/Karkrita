@@ -4,6 +4,8 @@ import bastarart2 from './image/bastarart2.webp';
 import bastarart4 from './image/bastarart4.webp';
 import bastarart5 from './image/bastar art5.webp';
 import bast3 from './image/bast3.webp';
+import img10 from './image/img10.webp';
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import bastarart51 from './image/bastarart51.webp';
 
@@ -43,6 +45,87 @@ export default function About() {
       </div>
 
     </div>
+
+
+
+
+<section className="features">
+  <div className="feature">
+    <i className="fa-solid fa-truck"></i>
+    <div>
+      <h3>FREE SHIPPING</h3>
+      <p>On orders over $75</p>
+    </div>
+  </div>
+
+  <div className="feature">
+    <i className="fa-solid fa-rotate"></i>
+    <div>
+      <h3>EASY RETURNS</h3>
+      <p>30 days return policy</p>
+    </div>
+  </div>
+
+  <div className="feature">
+    <i className="fa-solid fa-shield-halved"></i>
+    <div>
+      <h3>SECURE PAYMENT</h3>
+      <p>100% secure checkout</p>
+    </div>
+  </div>
+
+  <div className="feature">
+    <i className="fa-solid fa-headphones"></i>
+    <div>
+      <h3>CUSTOMER SUPPORT</h3>
+      <p>We're here to help</p>
+    </div>
+  </div>
+</section>
+
+{/*
+    < section >
+
+    <div className="section1">
+     <div className="card1">
+      <img  id='img' src={img10} alt="" />
+     </div>
+     <div className="card2">
+      <img id='img' src={img10} alt="" />
+     </div>
+     <div className="card3">
+      <img id='img' src={img10} alt="" />
+     </div>
+     </div>
+    </section>
+ 
+    < section className='section2'>
+     <div className="card1">
+      <img src={img10} alt="" />
+     </div>
+     <div className="card2">
+      <Reactimg src={img10} alt="" />
+     </div>
+     <div className="card3">
+      <img src={img10} alt="" />
+     </div>
+    </section>
+
+
+     < section className='section3'>
+     <div className="card1">
+      <img src={img10} alt="" />
+     </div>
+     <div className="card2">
+      <Reactimg src={img10} alt="" />
+     </div>
+     <div className="card3">
+      <img src={img10} alt="" />
+     </div>
+    </section>  */}
+
+    
+
     </>
   )
 }

@@ -1,4 +1,4 @@
-/* .secondNavbar {
+.secondNavbar {
     position: fixed;
     top: 100px;          
     left: 0;
@@ -12,6 +12,8 @@
 
     padding: 0 20px;
     z-index: 999;
+    border-bottom: 1px solid #d1cfcf;
+    box-shadow: 0 5px 10px #6c5c4d;/*rgb(140, 138, 138) */
 }
 
 
@@ -75,10 +77,7 @@
         font-size: 26px;
     }
 }
- */
-
-
-
+ 
 
 
 
