@@ -14,16 +14,23 @@ body{
     background-color: #F5F1EA;
 }
 
+
+.hero {
+    position: relative;
+    height: 620px;
+    width: 100%;
+}
 /* ================= Desktop ================= */
 
-.container{
-    position: fixed;
+
+   .container{
+    position: absolute;
     top: 100px;
     right: 50px;
     width: 800px;
     height: 900px;
-    
 }
+
 
 .box1,
 .box2,
@@ -60,7 +67,7 @@ body{
 }
 
 .title{
-    position: fixed;
+    position: absolute;
     top:50px;
     left:120px;
     width:40vw;
@@ -107,7 +114,7 @@ body{
 @media(max-width:1300px){
 
     .title{
-    position: fixed;
+    position: absolute;
     top:70px;
     left:60px;
     width:40vw;
@@ -208,7 +215,7 @@ body{
 @media(max-width:999px){
 
     .title{
-    position: fixed;
+    position: absolute;
     top:70px;
     left:40px;
     width:40vw;
@@ -236,7 +243,7 @@ body{
 @media(max-width:991px){
 
      .title{
-    position: fixed;
+    position: absolute;
     top:40px;
     left:20px;
     width:40vw;
@@ -277,7 +284,7 @@ body{
 @media(max-width:860px){
 
      .title{
-    position: fixed;
+    position: absolute;
     top:20px;
     left:20px;
     width:40vw;
@@ -412,8 +419,8 @@ body{
 .box2,
 .box3,
 .box4{
-    /* position:static; */
-    position: sticky;
+    
+    position: static;
     width:150px;
     
 }
@@ -517,7 +524,7 @@ body{
     background-color: #e2d3c2;/*#E1D4C2;*/
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-    margin-top: 820px;
+    margin-top: 200px;
 
    
 } 

@@ -13,7 +13,7 @@ import bastarart51 from './image/bastarart51.webp';
 export default function About() {
   return (
     <>
-     <div> 
+     <section className='hero'> 
       
     <div className="container">
         <div className="box1" >
@@ -44,7 +44,7 @@ export default function About() {
         
       </div>
 
-    </div>
+    </section>
 
 
 
