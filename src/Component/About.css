@@ -17,7 +17,7 @@ body{
 
 .hero {
     position: relative;
-    height: 620px;
+    height: 820px;
     width: 100%;
 }
 /* ================= Desktop ================= */
@@ -334,7 +334,7 @@ body{
     top: 100px;
     right: 50px;
     width: 800px;
-    height: 900px;
+    height: 650px;
 }
 
 .box1,
