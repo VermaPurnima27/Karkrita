@@ -1,0 +1,433 @@
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+  font-family: "Playfair Display", serif;
+}
+
+
+/* =========================================
+   PARTNER LOGOS
+========================================= */
+
+.partner-section {
+  width: 100%;
+  min-height: 290px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  gap: 30px;
+
+  padding: 35px 60px;
+
+  flex-wrap: wrap;
+}
+
+.partner-section img {
+  width: 150px;
+  max-height: 100px;
+
+  object-fit: contain;
+}
+
+
+/* Individual logo sizes */
+
+.partner-section img:nth-child(1) {
+  width: 220px;
+}
+
+.partner-section img:nth-child(2) {
+  width: 190px;
+}
+
+.partner-section img:nth-child(3) {
+  width: 200px;
+}
+
+.partner-section img:nth-child(4) {
+  width: 170px;
+}
+
+.partner-section img:nth-child(5) {
+  width: 150px;
+}
+
+.partner-section img:nth-child(6) {
+  width: 100px;
+}
+
+.partner-section img:nth-child(7) {
+  width: 190px;
+}
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.main-footer {
+  width: 100%;
+
+  background: #322222;
+
+  color: #ffffff;
+
+  display: grid;
+
+  grid-template-columns:
+    1.35fr
+    1fr
+    1.15fr
+    1.4fr;
+
+  gap: 60px;
+
+  padding: 55px 6% 30px;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 210px;
+
+  height: auto;
+
+  object-fit: contain;
+
+  margin-bottom: 18px;
+}
+
+.footer-about > p {
+  max-width: 350px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+
+  line-height: 1.55;
+
+  margin: 0 0 20px;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin: 12px 0 28px;
+}
+
+.social-icons a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 17px;
+
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-3px);
+
+  opacity: 0.65;
+}
+
+
+/* =========================================
+   COUNTRY
+========================================= */
+
+.country-select {
+  width: 115px;
+
+  padding: 10px;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  border: 1px solid #777777;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  margin-bottom: 25px;
+}
+
+.country-select option {
+  color: #000000;
+}
+
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.footer-about .copyright {
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  margin: 0;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-links {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.footer-links h3,
+.newsletter h3 {
+  font-size: 15px;
+
+  font-weight: 500;
+
+  margin: 0 0 22px;
+
+  letter-spacing: 0.5px;
+}
+
+.footer-links a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  margin-bottom: 13px;
+
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 0.65;
+
+  padding-left: 4px;
+}
+
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.newsletter {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.newsletter h3 {
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   EMAIL BOX
+========================================= */
+
+.email-box {
+  width: 100%;
+
+  max-width: 320px;
+
+  height: 60px;
+
+  background: #ffffff;
+
+  border-radius: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 20px;
+
+  margin-top: 5px;
+}
+
+.email-box input {
+  flex: 1;
+
+  min-width: 0;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 15px;
+
+  color: #333333;
+}
+
+.email-box input::placeholder {
+  color: #999999;
+}
+
+.email-box button {
+  border: none;
+
+  background: transparent;
+
+  color: #111111;
+
+  font-size: 30px;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+
+/* =========================================
+   ARTISAN IMAGE
+========================================= */
+
+.artisan-img {
+  width: 285px;
+
+  max-width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+
+  margin: 8px auto 0;
+}
+
+
+/* =========================================
+   NEWSLETTER SOCIAL
+========================================= */
+
+.newsletter-social {
+  margin: 5px 0 0;
+
+  justify-content: flex-start;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .main-footer {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+  }
+
+  .partner-section {
+    padding: 35px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .partner-section {
+    min-height: auto;
+
+    padding: 30px 20px;
+
+    gap: 25px;
+  }
+
+  .partner-section img {
+    width: 110px !important;
+
+    max-height: 70px;
+  }
+
+
+  .main-footer {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    padding: 45px 25px 30px;
+  }
+
+
+  .footer-logo {
+    width: 180px;
+  }
+
+
+  .footer-about > p {
+    max-width: 100%;
+
+    font-size: 15px;
+  }
+
+
+  .footer-links a {
+    font-size: 15px;
+  }
+
+
+  .email-box {
+    max-width: 100%;
+  }
+
+
+  .artisan-img {
+    width: 260px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+
+  .newsletter-social {
+    justify-content: flex-start;
+  }
+
+}

@@ -526,33 +526,7 @@ body{
     margin-top: 0;
 }
 
-/* .features {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 25px 40px;
-    background-color: #e2d3c2;
-/* 
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
 
-    margin-top: 820px;
-
-    /* Blue-Grey soft effect 
-    /* box-shadow: 0 -8px 20px rgba(80, 100, 120, 0.25); 
-    box-shadow: 0 -10px 20px rgba(139, 139, 139, 0.3);
-    /* box-shadow: 0 -6px 18px rgba(40, 49, 57, 0.18); 
-} */
-
-/* .feature {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 0 35px;
-    border-right: 1px solid #ddd;
-} */
 
 .feature:last-child {
     border-right: none;
@@ -638,4 +612,96 @@ body{
         font-size: 10px;
     }
 }
+
+/* product suggession part */
+.products-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f7f4ef; /* Background match karne ke liye */
+  padding: 20px;
+  font-family: serif;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e0dad0;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-image img {
+  width: 100%;
+  height: 300px;
+  
+  object-fit:cover;
+  display: block;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 5px 0;
+}
+
+.product-price {
+  font-size: 17px;
+  color: #1a1a1a;
+    font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.shop-btn {
+  background-color: #a38567; /* Image wala matching brown shade */
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: #8e7256;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+  width: 100%;
+}
+
+/* Dono taraf ki lines ke liye pseudo-elements ka use */
+.section-heading::before,
+.section-heading::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dcd5cc; /* Line ka color aur thickness */
+  margin: 0 20px; /* Line aur text ke beech ka gap */
+}
+
+.section-heading h2 {
+  font-family: "Playfair Display", Georgia, serif; /* Elegant serif font */
+  font-style: italic; /* Image ki tarah italic style */
+  font-size: 24px; /* Apni zaroorat ke hisaab se adjust kar sakte hain */
+  font-weight: normal;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+
+
 

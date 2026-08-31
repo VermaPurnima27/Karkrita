@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Component/Navbar';
 import Secondnav from './Component/Secondnav';
 import About from './Component/About';
+import Footer from './Component/Footer'
 // import CategorySection from './Component/CategorySection';
 
 //import Home from './Component/Home';
@@ -18,6 +19,7 @@ export default function App() {
       <Navbar/>
       <Secondnav/>
       <About/>
+      <Footer/>
       {/* <CategorySection/> */}
       
     {/*<Signin/>*/}
