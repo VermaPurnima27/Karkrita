@@ -48,7 +48,7 @@
 .add-first{
    color:rgb(70, 42, 42);/*#cccccc*/
    font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: -5px;
     font-family: 'Playfair Display', serif;
    
@@ -56,7 +56,7 @@
 
 .add-second{
    font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
     color:rgb(72, 47, 47);/*#cccccc*/
     font-family: 'Playfair Display', serif; 
 }
@@ -65,7 +65,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 16px;
+   font-size: 14px;
    margin-left: -4px;
    color:rgb(72, 47, 47); 
 }
@@ -79,7 +79,7 @@ border: 2px solid rgb(73, 44, 44);
 
 .innerAccount p{
    font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom:-8px ;
     font-family: 'Playfair Display', serif;
     font-weight:400;
@@ -88,7 +88,7 @@ border: 2px solid rgb(73, 44, 44);
 
 .innerAccount span{
    font-weight: 600;
-   font-size: 20px;
+   font-size: 17px;
    font-family: 'Playfair Display', serif;
    font-weight: bolder;
 
@@ -110,7 +110,7 @@ border: 2px solid rgb(73, 44, 44);
 .signin-btn{
    background-color:#d09821;
    color:rgb(73, 44, 44);
-   font-size: 20px;
+   font-size: 17px;
    font-weight: 520;
    border: none;
    padding: 8px 15px;
@@ -183,7 +183,7 @@ border: 2px solid rgb(73, 44, 44);
 
 .nav-orders p{
     font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom:-8px ;
     font-family: 'Playfair Display', serif;
     font-weight:400;
@@ -193,8 +193,8 @@ border: 2px solid rgb(73, 44, 44);
 .nav-orders span{
    font-weight: 600;
    color:rgb(72, 47, 47); 
-   /* font-size: 16px; */
-   font-size: 20px;
+   /* font-size: 14px; */
+   font-size: 17px;
     font-family: 'Playfair Display', serif;
     font-weight: bolder;
 
@@ -203,7 +203,7 @@ border: 2px solid rgb(73, 44, 44);
 .cart{
    position: relative;
    padding: 5px;
-   font-size: 20px;
+   font-size: 17px;
     font-weight: 600;
    cursor: pointer;
    background-color: rgb(228, 185, 159);/*rgb(209, 164, 104)*/
@@ -221,7 +221,7 @@ border: 2px solid rgb(73, 44, 44);
 }
 
 .cart-count{
-  /* font-size: 16px; */
+  /* font-size: 14px; */
   font-weight: 600;
    top: -8px;
    padding: 2px 8px 0px -9px;
@@ -476,7 +476,7 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
     .cart{
         margin-right:0;
         padding: 5px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .navAdd{
@@ -612,7 +612,7 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
     }
 
     .cart{
-        font-size: 16px;
+        font-size: 14px;
         padding: 5px;
     }
 
@@ -782,7 +782,7 @@ border: 2px solid rgb(73, 44, 44);/*rgb(73, 44, 44)*/
 .cart{
     margin: 0;
     padding: 3px 3px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .cart-count{
