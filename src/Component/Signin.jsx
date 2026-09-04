@@ -18,8 +18,8 @@ export default function Signin() {
   }
   return (
     <>
-      <div className='container'>
-        <div className="card">
+      <div className='Signin-container'>
+        <div className="Signin-card">
 
           <h1>login In</h1>
 
@@ -29,7 +29,7 @@ export default function Signin() {
             <span className='s1'>Email:</span>
             <input type="email" name="email1" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
             <span className='s2'>Password:</span>
-            <input type="password" name="password1" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+            <input type={showPassword ? 'text' : 'password'} name="password1" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
             <span className='eye-icon1' onClick={() => setShowPassword(!showPassword)}>{showPassword ? <FaEyeSlash /> : <FaEye />}</span>
             <div className="social-btn">
               <button className="google-btn">

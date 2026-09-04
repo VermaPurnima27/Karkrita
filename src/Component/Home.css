@@ -1,95 +1,715 @@
 
 
-.home-carousel{
-    margin-top:140px;
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
 }
 
-.carousel-item{
-    height:500px;
+body{
+    overflow-x: hidden;
+    /* background-color: #f5f0e6; */
+    background-color: #F5F1EA;
 }
 
-.carousel-item img{
+
+.hero {
+    position: relative;
+    height: 820px;
+    width: 100%;
+}
+/* ================= Desktop ================= */
+
+
+   .hero-images{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 800px;
+    height: 900px;
+
+    z-index: 10;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    z-index: 20;
+}
+
+
+.box1,
+.box2,
+.box3,
+.box4{
+    position: absolute;
+    width: 280px;
+    border-radius: 20px;
+    background: rgb(92,73,73);
+}
+
+.box1{
+    top:90px;
+    left:160px;
+    height:280px;
+}
+
+.box2{
+    top:120px;
+    right:70px;
+    height:250px;
+}
+
+.box3{
+    bottom:270px;
+    left:160px;
+    height:250px;
+}
+
+.box4{
+    bottom:240px;
+    right:70px;
+    height:280px;
+}
+
+.title{
+    position: absolute;
+    top:50px;
+    left:120px;
+    width:40vw;
+    padding-top:150px;
+    padding-left:20px;
+}
+
+.content{
+    font-size:70px;
+    color:rgb(79,57,57);
+}
+
+.title p{
+    font-size:40px;
+    color:rgb(136,82,55);
+}
+
+.para{
+    font-size:22px;
+    color:#3e332a;
+}
+
+.title-btn{
+    background:#cc9d7a;
+    color:#342121;
+    
+    padding:12px 25px;
+    border-radius:8px;
+    border:2px solid rgb(70,44,44);
+    font-size:20px;
+    cursor:pointer;
+    justify-content:center;
+    align-items:center;
+    height:50px;
+    padding-top:10px;
+}
+
+.title-btn:hover{
+    font-size:16px;
+}
+
+/* ================= Tablet ================= */
+
+@media(max-width:1300px){
+
+    .title{
+    position: absolute;
+    top:70px;
+    left:60px;
+    width:40vw;
+    padding-top:150px;
+    padding-left:20px;
+}
+
+.content{
+    font-size:50px;
+    color:rgb(79,57,57);
+}
+
+.title p{
+    font-size:30px;
+    color:rgb(136,82,55);
+}
+
+.para{
+    font-size:20px;
+    color:#3e332a;
+}
+
+    .box1{
+    top:100px;
+    left:300px;
+    height:230px;
+}
+
+.box2{
+    top:130px;
+    right:30px;
+    height:200px;
+}
+
+.box3{
+    bottom:360px;
+    left:300px;
+    height:200px;
+}
+
+.box4{
+    bottom:330px;
+    right:30px;
+    height:230px;
+}
+
+
+.box1,
+.box2,
+.box3,
+.box4{
+    position: absolute;
+    width: 230px;
+    border-radius: 20px;
+    background: rgb(92,73,73);
+
+    
+
+}
+}
+
+@media(max-width:1100px){
+
+    .title{
+    top:20px;
+}
+
+  .box1{
+    top:90px;
+    left:340px;
+    height: 210px;
+    width: 210px;
+}
+
+.box2{
+    top:120px;
+    right:30px;
+    height:180px;
+    width: 210px;
+}
+
+.box3{
+    bottom:410px;
+    left:340px;
+    height:180px;
+    width: 210px;
+}
+
+.box4{
+    bottom:380px;
+    right:30px;
+     height: 210px;
+    width: 210px;
+}
+
+}
+
+@media(max-width:999px){
+
+    .title{
+    position: absolute;
+    top:70px;
+    left:40px;
+    width:40vw;
+    padding-top:150px;
+    padding-left:20px;
+}
+
+.content{
+    font-size:40px;
+    color:rgb(79,57,57);
+}
+
+.title p{
+    font-size:25px;
+    color:rgb(136,82,55);
+}
+
+.para{
+    font-size:16px;
+    color:#3e332a;
+}
+
+}
+
+@media(max-width:991px){
+
+     .title{
+    position: absolute;
+    top:40px;
+    left:20px;
+    width:40vw;
+    padding-top:150px;
+     }
+
+     .box1{
+        top:90px;
+        left:300px;
+        height: 210px;
+        width: 210px;
+    }
+
+
+.box2{
+    top:120px;
+   left: 520px;
+    height:180px;
+    width: 210px;
+} 
+ 
+.box3{
+    bottom:410px;
+    left:300px;
+    height:180px;
+    width: 210px;
+}
+
+.box4{
+    bottom:380px;
+    left: 520px;
+     height: 210px;
+    width: 210px;
+} 
+
+}
+
+@media(max-width:860px){
+
+     .title{
+    position: absolute;
+    top:20px;
+    left:20px;
+    width:40vw;
+    padding-top:150px;
+     }
+
+.box1{
+    top:90px;
+    left:370px;
+    height: 180px;
+    width: 180px;
+}
+
+.box2{
+    top:110px;
+    left:560px;
+    height:160px;
+    width: 180px;
+}
+
+.box3{
+    bottom:460px;
+    left:370px;
+    height:160px;
+    width: 180px;
+}
+
+.box4{
+    bottom:440px;
+    left:560px;
+     height: 180px;
+    width: 180px;
+}
+
+ 
+
+}
+
+
+
+/* ================= Mobile ================= */
+
+@media(max-width:768px){
+
+   .hero-images{
+    position:relative;
+    top: 100px;
+    right: 50px;
+    width: 800px;
+    height: 650px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4{
+    position: relative;
+    width: 250px;
+    border-radius: 20px;
+    background: rgb(92,73,73);
+}
+
+.box1{
+    top: 30px;
+    left:70px;
+    height:250px;
+}
+
+.box2{
+    top:-190px;
+    left:330px;
+    height:220px;
+}
+
+.box3{
+    bottom:180px;
+    left:70px;
+    height:220px;
+}
+
+.box4{
+    bottom:400px;
+    left:330px;
+    height:250px;
+}
+
+
+.title{
+    position: relative;
+    top: 30px;
     width:100%;
-    height:600px;
-    object-fit:cover;
+    margin-top:-400px ;
+     padding-right: 30px; 
+    text-align:center;
 }
 
-@media (max-width:1200px){6
-    .home-carousel{
-        margin-top:100px;
-    }
-
-    .carousel-item{
-        height:500px;
-    }
-
-    .carousel-item img{
-        width:100%;
-        height:500px;
-        object-fit:cover;
-    }
+.content{
+    font-size:40px;
 }
 
+.title p{
+    font-size:24px;
+}
 
-@media (max-width:1100px){
+.para{
+    font-size:16px;
+}
 
-    .home-carousel{
-        margin-top:100px;
-    }
+.title-btn{
+    font-size:16px;
+    padding:10px 20px;
 
-    .carousel-item{
-        height:500px;
-    }
-
-    .carousel-item img{
-        width:100%;
-        height:500px;
-        object-fit:cover;
-    }
+}
 }
 
 
+@media (max-width:580px){
 
-@media (max-width:990px){
-
-    .home-carousel{
-        margin-top:97px;
-    }
-
-    .carousel-item{
-        height:600px;
-    }
-
-    .carousel-item img{
-        width:100%;
-        height:500px;
-        object-fit:cover;
-    }
+.hero-images{
+    width:100%;
+    height:auto;
+    position:relative;
+    top:100px;
+    right:0;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:5px;
+    justify-items:center;
 }
 
-@media (max-width:799px){
-
-    .home-carousel{
-        margin-top:95px;
-    }
-
+.box1,
+.box2,
+.box3,
+.box4{
+    
+    position: static;
+    width:150px;
     
 }
 
-@media (max-width:990px){
+.box1{
+    height:150px;
+    left: 10px;
+}
 
-    .home-carousel{
-        margin-top:90px;
-    }
+.box2{
+    height: 140px;
+    top: 110px;
+}
+.box3{
+    height: 140px;
+    left: 10px;
+}
 
+.box4{
+    height: 150px;
+    top: 400px;
+}
+
+
+
+/* Title */
+
+.title{
+    position:relative;
+    width:100%;
+    left:0;
+    top:80px;
+
+    margin-top:30px;
+    margin-left:0;
+
+    padding:0 20px;
+    text-align:center;
+}
+
+.content{
+    font-size:32px;
+    line-height:1.2;
+}
+
+.title p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+.para{
+    font-size:14px;
+    line-height:1.6;
+    margin-top:15px;
+}
+
+.title-btn{
+    margin-top:-35px;
+    padding:0px 20px;
+    font-size:15px;
+    height:30px ;
+}
 
 }
 
-@media (max-width:530px){
 
-    .home-carousel{
-        margin-top:85px;
-    }
+.section1{
+    margin-top:2000px ;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
 
+.card1,card2,card3{
+    height: 10px;
+    width: 10px;
 
 }
+
+.card img{
+    height: 10px;
+    width: 10px;
+    background-size: cover;
+    
+}
+
+
+
+
+
+
+/* ================= Features ================= */
+.features {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 40px;
+    background-color: #e2d3c2;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 0;
+}
+
+
+
+.feature:last-child {
+    border-right: none;
+}
+
+.feature i {
+    font-size: 30px;
+    color: #333;
+}
+
+.feature h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.feature p {
+    margin: 6px 0 0;
+    font-size: 15px;
+    color: #6b6a6a;
+}
+
+
+/* ================= Features Tablet ================= */
+
+@media(max-width: 900px) {
+
+    .features {
+        padding: 20px 10px;
+    }
+
+    .feature {
+        padding: 0 15px;
+        gap: 10px;
+    }
+
+    .feature i {
+        font-size: 25px;
+    }
+
+    .feature h3 {
+        font-size: 12px;
+    }
+
+    .feature p {
+        font-size: 10px;
+    }
+}
+
+
+/* ================= Features Mobile ================= */
+
+@media(max-width: 600px) {
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 25px 15px;
+    }
+
+    .feature {
+        padding: 10px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .feature:nth-child(3),
+    .feature:nth-child(4) {
+        border-bottom: none;
+    }
+
+    .feature i {
+        font-size: 24px;
+    }
+
+    .feature h3 {
+        font-size: 11px;
+    }
+
+    .feature p {
+        font-size: 10px;
+    }
+}
+
+/* product suggession part */
+.products-con {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #f7f4ef; /* Background match karne ke liye */
+  padding: 20px;
+  font-family: serif;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid #e0dad0;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-image img {
+  width: 100%;
+  height: 300px;
+  
+  object-fit:cover;
+  display: block;
+}
+
+.product-information {
+  padding: 15px;
+  text-align: left;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0 0 5px 0;
+}
+
+.product-prize {
+  font-size: 17px;
+  color: #1a1a1a;
+    font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.shop-btn {
+  background-color: #a38567; /* Image wala matching brown shade */
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: #8e7256;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+  width: 100%;
+}
+
+/* Dono taraf ki lines ke liye pseudo-elements ka use */
+.section-heading::before,
+.section-heading::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #dcd5cc; /* Line ka color aur thickness */
+  margin: 0 20px; /* Line aur text ke beech ka gap */
+}
+
+.section-heading h2 {
+  font-family: "Playfair Display", Georgia, serif; /* Elegant serif font */
+  font-style: italic; /* Image ki tarah italic style */
+  font-size: 24px; /* Apni zaroorat ke hisaab se adjust kar sakte hain */
+  font-weight: normal;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+
+

@@ -56,7 +56,7 @@
 
 .add-second{
    font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
     color:rgb(72, 47, 47);/*#cccccc*/
     font-family: 'Playfair Display', serif; 
 }
@@ -88,7 +88,7 @@ border: 2px solid rgb(73, 44, 44);
 
 .innerAccount span{
    font-weight: 600;
-   font-size: 18px;
+   font-size: 20px;
    font-family: 'Playfair Display', serif;
    font-weight: bolder;
 
@@ -108,12 +108,23 @@ border: 2px solid rgb(73, 44, 44);
 }
 
 .signin-btn{
-   background-color:#c08810;
+   background-color:#d09821;
+   color:rgb(73, 44, 44);
+   font-size: 20px;
+   font-weight: 520;
    border: none;
    padding: 8px 15px;
    cursor: pointer;
    border-radius: 3px;
 }
+
+.signin-btn:hover{
+
+   font-weight: 550;
+   color:rgb(73, 44, 44);
+}
+
+  
 
 
 /*
@@ -176,12 +187,14 @@ border: 2px solid rgb(73, 44, 44);
     margin-bottom:-8px ;
     font-family: 'Playfair Display', serif;
     font-weight:400;
+    color:rgb(72, 47, 47); 
    
 }
 .nav-orders span{
    font-weight: 600;
+   color:rgb(72, 47, 47); 
    /* font-size: 16px; */
-   font-size: 18px;
+   font-size: 20px;
     font-family: 'Playfair Display', serif;
     font-weight: bolder;
 
@@ -190,7 +203,7 @@ border: 2px solid rgb(73, 44, 44);
 .cart{
    position: relative;
    padding: 5px;
-   font-size: 18px;
+   font-size: 20px;
     font-weight: 600;
    cursor: pointer;
    background-color: rgb(228, 185, 159);/*rgb(209, 164, 104)*/
@@ -203,6 +216,8 @@ border: 2px solid rgb(73, 44, 44);
 
 .cart:hover{
    border: 2px solid rgb(73, 44, 44);
+   color:rgb(73, 44, 44);
+    text-decoration: none;
 }
 
 .cart-count{

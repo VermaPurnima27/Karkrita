@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faMagnifyingGlass, faShoppingCart,faBars } from '@fortawesome/free-solid-svg-icons';
 //import desilogo from "../Component/image/desilogo.png";
 import karkriyaa from "../Component/image/karkriyaa.png";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -110,8 +112,8 @@ export default function Navbar() {
         </div>
 
         {/* Account */}
-        <div className="nav-right">
-          <div className="innerAccount" onClick={toggleDropdown} ref={dropdownRef}>
+        <div className="nav-right" ref={dropdownRef}>
+          <div className="innerAccount" onClick={toggleDropdown}>
             <p>please,Login</p>
             <span>Ac & List</span>
           </div>
@@ -119,7 +121,11 @@ export default function Navbar() {
           {open && (
             <div className="dropdown">
               <div className="top">
-                <button className="signin-btn">sign-in</button>
+               
+                <Link to="/signin" className="signin-btn" onClick={() => setOpen(false)}>
+                  sign-in
+                </Link>
+              
                 <p>
                   New Customer? <a href="#">start here</a>
                 </p>
@@ -141,15 +147,15 @@ export default function Navbar() {
           )}
         </div>
 
-        <div className="nav-orders">
+        <Link to="/orders" className="nav-orders">
           <p>Return and</p>
           <span>Order</span>
-        </div>
+        </Link>
 
-        <div className="cart">
+        <Link to="/cart" className="cart">
           <FontAwesomeIcon icon={faShoppingCart} />
           <span className="cart-count">Cart</span>
-        </div>
+        </Link>
         
 
       </nav>

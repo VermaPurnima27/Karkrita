@@ -1,0 +1,395 @@
+/* =========================
+   CART PAGE
+========================= */
+
+.cart-page {
+    min-height: 100vh;
+    background: #f5f1ea;
+    color: #342121;
+    font-family: 'Playfair Display', serif;
+    padding: 150px 7% 60px;
+}
+
+
+/* =========================
+   TOP SECTION
+========================= */
+
+.cart-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.cart-top h1 {
+    font-size: 42px;
+    margin: 0;
+    color: #452f26;
+}
+
+.cart-top p {
+    margin-top: 8px;
+    color: #75645c;
+    font-family: Arial, sans-serif;
+}
+
+.continue-shopping a {
+    text-decoration: none;
+    color: #452f26;
+    border: 1px solid #452f26;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.continue-shopping a:hover {
+    background: #452f26;
+    color: white;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.cart-container {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px;
+    align-items: start;
+}
+
+
+/* =========================
+   CART PRODUCTS
+========================= */
+
+.cart-products {
+    background: #fff;
+    border: 1px solid #ddd0c3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cart-heading {
+    display: grid;
+    grid-template-columns: 2fr 0.7fr 1fr 0.7fr;
+    padding: 18px 25px;
+    background: #eadcc9;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #452f26;
+}
+
+
+/* =========================
+   PRODUCT
+========================= */
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 2fr 0.7fr 1fr 0.7fr;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 1px solid #e4d9ce;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product-info img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd0c3;
+}
+
+.product-info h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    color: #452f26;
+}
+
+.product-info p {
+    margin: 0 0 12px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #81736b;
+}
+
+
+/* =========================
+   REMOVE BUTTON
+========================= */
+
+.remove-btn {
+    border: none;
+    background: none;
+    color: #9b4e3d;
+    cursor: pointer;
+    padding: 0;
+    font-size: 13px;
+}
+
+.remove-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.product-price,
+.item-total {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   QUANTITY
+========================= */
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: 1px solid #b9a69a;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quantity-box button {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #f1e8dd;
+    color: #452f26;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.quantity-box button:hover {
+    background: #dfc9b5;
+}
+
+.quantity-box span {
+    width: 35px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   ORDER SUMMARY
+========================= */
+
+.order-summary {
+    background: white;
+    padding: 28px;
+    border: 1px solid #ddd0c3;
+    border-radius: 8px;
+    position: sticky;
+    top: 120px;
+}
+
+.order-summary h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #452f26;
+    font-size: 25px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+    font-family: Arial, sans-serif;
+    color: #55453e;
+}
+
+.free-delivery {
+    background: #f4eadf;
+    padding: 12px;
+    font-size: 13px;
+    color: #6b4d3e;
+    border-radius: 5px;
+    margin: 18px 0;
+}
+
+.order-summary hr {
+    border: none;
+    border-top: 1px solid #ddd0c3;
+}
+
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 22px 0;
+    font-size: 20px;
+}
+
+.summary-total strong {
+    font-size: 24px;
+    color: #452f26;
+}
+
+
+/* =========================
+   CHECKOUT
+========================= */
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background: #452f26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background: #65453a;
+}
+
+.secure-payment {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #777;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   BENEFITS
+========================= */
+
+.cart-benefits {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cart-benefits > div {
+    background: #e7d7c4;
+    padding: 22px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.cart-benefits span {
+    font-size: 27px;
+}
+
+.cart-benefits h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.cart-benefits p {
+    margin: 0;
+    font-size: 13px;
+    color: #71625b;
+}
+
+
+/* =========================
+   EMPTY CART
+========================= */
+
+.empty-cart {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.empty-icon {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.empty-cart h2 {
+    color: #452f26;
+}
+
+.empty-cart p {
+    color: #76665e;
+    font-family: Arial, sans-serif;
+}
+
+.shop-btn1 {
+    display: inline-block;
+    margin-top: 20px;
+    background: #452f26;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .cart-container {
+        grid-template-columns: 1fr;
+    }
+
+    .order-summary {
+        position: static;
+    }
+
+    .cart-benefits {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .cart-page {
+        padding: 130px 20px 40px;
+    }
+
+    .cart-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .cart-top h1 {
+        font-size: 32px;
+    }
+
+    .cart-heading {
+        display: none;
+    }
+
+    .cart-item {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .product-info img {
+        width: 90px;
+        height: 90px;
+    }
+}

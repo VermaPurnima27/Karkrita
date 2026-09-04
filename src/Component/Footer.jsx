@@ -7,26 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
 
-      {/* ================= PARTNER LOGOS ================= */}
-      <div className="partner-section">
-
-        <img src="/images/reliance.png" alt="Reliance Foundation" />
-
-        <img src="/images/secl.png" alt="SECL" />
-
-        <img src="/images/cg-government.png" alt="Government of Chhattisgarh" />
-
-        <img src="/images/tribes-india.png" alt="Tribes India" />
-
-        <img src="/images/invest-india.png" alt="Invest India" />
-
-        <img src="/images/swadesh.png" alt="Swadesh" />
-
-        <img src="/images/odop.png" alt="ODOP" />
-
-      </div>
-
-
+    
       {/* ================= MAIN FOOTER ================= */}
       <div className="main-footer">
 
