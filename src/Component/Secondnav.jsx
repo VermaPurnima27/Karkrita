@@ -1,58 +1,187 @@
 import { useState } from "react";
 import "./Secondnav.css";
-import { FaBars, FaTimes } from "react-icons/fa";
+
+import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Secondnav() {
 
-  
-  const [menuOpen, setMenuOpen] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
-  return (
-    <>
-      <div className="secondNavbar">
+    // Side menu close karne ke liye
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
 
-        <div className="menuIcon" onClick={() => setMenuOpen(true)}>
-          <FaBars />
-        </div>
 
-        <div className="menuLinks">
-          <a href="/">Home</a>
-          <a href="/">Categories</a>
-          <a href="/">New Arrivals</a>
-          <a href="/">Best Sellers</a>
-          <a href="/">Artisans</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-        </div>
+    return (
+        <>
 
-      </div>
+            {/* ================= SECOND NAVBAR ================= */}
 
-      <div className={menuOpen ? "sideMenu active" : "sideMenu"}>
+            <div className="secondNavbar">
 
-        <div className="closeBtn">
+                {/* MENU ICON */}
 
-          <FaTimes onClick={() => setMenuOpen(false)} />
+                <div
+                    className="menuIcon"
+                    onClick={() => setMenuOpen(true)}
+                >
+                    <FaBars />
+                </div>
 
-        </div>
 
-        <a href="/">🏠 Home</a>
+                {/* ================= DESKTOP LINKS ================= */}
 
-        <a href="/">📂 Categories</a>
+                <div className="menuLinks">
 
-        <a href="/">⭐ New Arrivals</a>
+                    <Link to="/">
+                        Home
+                    </Link>
 
-        <a href="/">🔥 Best Sellers</a>
+                    <Link to="/categories">
+                        Categories
+                    </Link>
 
-        <a href="/">👨‍🎨 Artisans</a>
+                    <Link to="/new-arrivals">
+                        New Arrivals
+                    </Link>
 
-        <a href="/">ℹ About</a>
+                    <Link to="/best-sellers">
+                        Best Sellers
+                    </Link>
 
-        <a href="/">📞 Contact</a>
+                    <Link to="/artisans">
+                        Artisans
+                    </Link>
 
-      </div>
-    </>
-  );
+                    <Link to="/about">
+                        About
+                    </Link>
+
+                    <Link to="/contact">
+                        Contact
+                    </Link>
+
+
+                    {/* SEARCH */}
+
+                    <Link
+                        to="/search"
+                        className="searchNavBtn"
+                    >
+                        
+                        <span>Search</span>
+                    </Link>
+
+                </div>
+
+            </div>
+
+
+
+            {/* ================= SIDE MENU ================= */}
+
+            <div
+                className={
+                    menuOpen
+                        ? "sideMenu active"
+                        : "sideMenu"
+                }
+            >
+
+                {/* CLOSE BUTTON */}
+
+                <div className="closeBtn">
+
+                    <FaTimes
+                        onClick={closeMenu}
+                    />
+
+                </div>
+
+
+                {/* SEARCH */}
+
+                <Link
+                    to="/search"
+                    onClick={closeMenu}
+                >
+                    🔍 Search
+                </Link>
+
+
+                {/* HOME */}
+
+                <Link
+                    to="/"
+                    onClick={closeMenu}
+                >
+                    🏠 Home
+                </Link>
+
+
+                {/* CATEGORIES */}
+
+                <Link
+                    to="/categories"
+                    onClick={closeMenu}
+                >
+                    📂 Categories
+                </Link>
+
+
+                {/* NEW ARRIVALS */}
+
+                <Link
+                    to="/new-arrivals"
+                    onClick={closeMenu}
+                >
+                    ⭐ New Arrivals
+                </Link>
+
+
+                {/* BEST SELLERS */}
+
+                <Link
+                    to="/best-sellers"
+                    onClick={closeMenu}
+                >
+                    🔥 Best Sellers
+                </Link>
+
+
+                {/* ARTISANS */}
+
+                <Link
+                    to="/artisans"
+                    onClick={closeMenu}
+                >
+                    👨‍🎨 Artisans
+                </Link>
+
+
+                {/* ABOUT */}
+
+                <Link
+                    to="/about"
+                    onClick={closeMenu}
+                >
+                    ℹ About
+                </Link>
+
+
+                {/* CONTACT */}
+
+                <Link
+                    to="/contact"
+                    onClick={closeMenu}
+                >
+                    📞 Contact
+                </Link>
+
+            </div>
+
+        </>
+    );
 }
-
-
-

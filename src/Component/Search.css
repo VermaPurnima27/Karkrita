@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.search-page {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: #f0e7e1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    /* Navbar + Second Navbar ke neeche */
+    padding-top: 190px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    padding-bottom: 80px;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.search-container {
+
+    width: 650px;
+
+    max-width: 100%;
+
+    background-color: rgb(251, 228, 198);
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= HEADING ================= */
+
+.search-container h1 {
+
+    margin: 0;
+
+    color: #6b3e26;
+
+    font-family: "Times New Roman", serif;
+
+    font-size: 32px;
+}
+
+
+.search-container p {
+
+    color: #7b5843;
+
+    font-family: "Times New Roman", serif;
+
+    font-size: 17px;
+}
+
+
+/* ================= SEARCH BOX ================= */
+
+.search-box {
+
+    width: 100%;
+
+    display: flex;
+
+    margin-top: 30px;
+}
+
+
+.search-box input {
+
+    flex: 1;
+
+    min-width: 0;
+
+    height: 50px;
+
+    border: 2px solid #6b3e26;
+
+    border-right: none;
+
+    border-radius: 10px 0 0 10px;
+
+    outline: none;
+
+    padding: 0 15px;
+
+    font-size: 16px;
+
+    font-family: "Times New Roman", serif;
+
+    color: #4c3320;
+}
+
+
+.search-box input::placeholder {
+
+    color: #8a6b58;
+}
+
+
+/* ================= SEARCH BUTTON ================= */
+
+.search-box button {
+
+    width: 120px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 0 10px 10px 0;
+
+    background-color: #6b3e26;
+
+    color: #f5d2ae;
+
+    font-family: "Times New Roman", serif;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+.search-box button:hover {
+
+    background-color: #5f3415;
+
+    color: white;
+}
+
+
+/* ================= RESULT ================= */
+
+.search-result {
+
+    margin-top: 25px;
+
+    color: #6b3e26 !important;
+
+    font-size: 18px !important;
+}
+
+
+/* ================================================= */
+/*                    RESPONSIVE                     */
+/* ================================================= */
+
+
+/* ---------- 600px ---------- */
+
+@media (max-width: 600px) {
+
+    .search-page {
+
+        padding-top: 140px;
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+
+    .search-container {
+
+        padding: 30px 20px;
+
+        border-radius: 20px;
+    }
+
+
+    .search-container h1 {
+
+        font-size: 26px;
+    }
+
+
+    .search-container p {
+
+        font-size: 15px;
+    }
+
+
+    .search-box {
+
+        margin-top: 25px;
+    }
+
+
+    .search-box button {
+
+        width: 95px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* ---------- 450px ---------- */
+
+@media (max-width: 450px) {
+
+    .search-page {
+
+        padding-top: 125px;
+    }
+
+
+    .search-container {
+
+        padding: 25px 15px;
+    }
+
+
+    .search-container h1 {
+
+        font-size: 23px;
+    }
+
+
+    .search-box input {
+
+        height: 45px;
+
+        font-size: 14px;
+
+        padding: 0 10px;
+    }
+
+
+    .search-box button {
+
+        height: 45px;
+
+        width: 80px;
+
+        font-size: 14px;
+    }
+}

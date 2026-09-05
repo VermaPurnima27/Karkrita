@@ -68,7 +68,7 @@ export default function Home() {
       <div className="title">
         <div className="content">Forgotten Treasure of the World</div>
         {/*<p>Turn Tradition into Fashion</p>*/}
-        <p>Be classNamey, Be Cultural, Be Unique</p>
+        <p>Be classy, Be Cultural, Be Unique</p>
         <h6 className='para'>"In a world of fast trends, choose the timeless beauty of traditional art.
           Every handmade piece carries a story, a heritage, and a soul.
           Wearing and using these crafts is not just style, it’s identity.

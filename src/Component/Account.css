@@ -1,0 +1,356 @@
+/* ================= GLOBAL ================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.account-page {
+    min-height: 100vh;
+
+    background: #f0e7e1;
+
+    padding-top: 150px;
+
+    padding-bottom: 100px;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    color: #4c3320;
+}
+
+
+/* ================= HEADER ================= */
+
+.account-header {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.account-header h1 {
+    font-size: 38px;
+
+    color: #6b3e26;
+
+    margin: 0 0 8px;
+}
+
+.account-header p {
+    font-size: 18px;
+
+    color: #795548;
+
+    margin: 0;
+}
+
+
+/* ================= MAIN CONTAINER ================= */
+
+.account-container {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 30px;
+
+    padding: 0 20px;
+}
+
+
+/* ================= PROFILE CARD ================= */
+
+.profile-card {
+    width: 32%;
+
+    background: rgb(251, 228, 198);
+
+    border-radius: 20px;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+
+    height: fit-content;
+}
+
+
+.profile-icon {
+    width: 85px;
+
+    height: 85px;
+
+    border-radius: 50%;
+
+    background: #6b3e26;
+
+    color: #dc9766;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 35px;
+}
+
+
+.profile-card h2 {
+    color: #6b3e26;
+
+    margin: 10px 0;
+
+    font-size: 25px;
+}
+
+
+.profile-card p {
+    color: #795548;
+
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+
+.edit-profile {
+    border: none;
+
+    background: #6b3e26;
+
+    color: #dc9766;
+
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    cursor: pointer;
+}
+
+.edit-profile:hover {
+    background: #4c3320;
+
+    color: white;
+}
+
+
+/* ================= OPTIONS ================= */
+
+.account-options {
+    width: 68%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.account-option,
+.logout-option {
+    width: 100%;
+
+    min-height: 85px;
+
+    background: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 15px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    text-align: left;
+
+    text-decoration: none;
+
+    color: #4c3320;
+
+    cursor: pointer;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    transition: 0.3s;
+}
+
+
+.account-option:hover,
+.logout-option:hover {
+    background: #fbe4c6;
+
+    transform: translateX(5px);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ================= ICON ================= */
+
+.option-icon {
+    width: 48px;
+
+    height: 48px;
+
+    min-width: 48px;
+
+    border-radius: 50%;
+
+    background: #6b3e26;
+
+    color: #dc9766;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+
+/* ================= TEXT ================= */
+
+.account-option h3,
+.logout-option h3 {
+    margin: 0 0 5px;
+
+    font-size: 19px;
+
+    color: #6b3e26;
+}
+
+
+.account-option p,
+.logout-option p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #795548;
+}
+
+
+/* ================= LOGOUT ================= */
+
+.logout-option {
+    margin-top: 5px;
+}
+
+
+/* ================================================= */
+/* TABLET */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+    .account-page {
+        padding-top: 120px;
+    }
+
+    .account-header h1 {
+        font-size: 32px;
+    }
+
+    .account-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .profile-card {
+        width: 100%;
+
+        max-width: 500px;
+    }
+
+    .account-options {
+        width: 100%;
+
+        max-width: 600px;
+    }
+}
+
+
+/* ================================================= */
+/* MOBILE */
+/* ================================================= */
+
+@media (max-width: 500px) {
+
+    .account-page {
+        padding-top: 105px;
+
+        padding-bottom: 60px;
+    }
+
+    .account-header {
+        margin-bottom: 25px;
+    }
+
+    .account-header h1 {
+        font-size: 28px;
+    }
+
+    .account-header p {
+        font-size: 15px;
+    }
+
+    .account-container {
+        padding: 0 12px;
+
+        gap: 20px;
+    }
+
+    .profile-card {
+        padding: 25px 15px;
+    }
+
+    .account-option,
+    .logout-option {
+        min-height: 75px;
+
+        padding: 12px;
+
+        gap: 12px;
+    }
+
+    .option-icon {
+        width: 42px;
+
+        height: 42px;
+
+        min-width: 42px;
+
+        font-size: 17px;
+    }
+
+    .account-option h3,
+    .logout-option h3 {
+        font-size: 17px;
+    }
+
+    .account-option p,
+    .logout-option p {
+        font-size: 13px;
+    }
+}

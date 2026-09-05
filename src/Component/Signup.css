@@ -1,176 +1,416 @@
+/* ================= GLOBAL ================= */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f0e7e1;
-    overflow-y: scroll;
-    
+    overflow-x: hidden;
 }
+
+
+/* ================= SIGNUP CONTAINER ================= */
 
 .container {
-    height: 60vh;
-    width: 500px;
+    width: 100%;
+    min-height: 100vh;
+
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-left: 680px;
+    align-items: flex-start;
 
+    /* Navbar + Second Navbar ke neeche space */
+    padding-top: 155px;
+    padding-bottom: 100px;
 }
+
+
+/* ================= SIGNUP CARD ================= */
 
 .card {
-    background-color:  rgb(251, 228, 198);
+    width: 500px;
+    max-width: 95%;
+
+    background-color: rgb(251, 228, 198);
+
     padding: 20px;
+
     border-radius: 25px;
+
     text-align: center;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0, 1);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.20);
 }
+
+
+/* ================= HEADING ================= */
 
 .card h1 {
     color: #6b3e26;
-    font-family: 'Times New Roman';
+
+    font-family: 'Times New Roman', Times, serif;
+
     font-weight: bold;
 
+    font-size: 28px;
+
+    margin: 0 0 18px 0;
 }
+
+
+/* ================= INPUT BOX ================= */
 
 .input-box {
-    height: 40 vh;
-    width: 400px;
-    background:#6b3e26;
-    position: relative;
-    border-radius: 15px;
-    padding: 15px;
-    margin-top: 10px;
+    width: 100%;
 
+    background: #6b3e26;
+
+    position: relative;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    margin-top: 10px;
 }
 
+
+/* ================= WELCOME TEXT ================= */
+
 .heading1 {
-    color:#dc9766;;
-    font-size: 22px;
-    font-weight: 3400;
-    margin-bottom: 10px;
+    color: #dc9766;
+
+    font-size: 21px;
+
+    font-weight: 400;
+
+    margin: 0 0 15px 0;
+
     font-family: 'Courier New', Courier, monospace;
 }
 
 
+/* ================= LABELS ================= */
+
+.inputhead1,
+.inputhead2,
+.inputhead3 {
+    display: block;
+
+    color: #dc9766;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 18px;
+
+    text-align: left;
+
+    margin: 10px 5px 3px;
+}
+
+
+/* ================= INPUT ================= */
 
 .input-box input {
-   
-   width:100% ;
+    width: 100%;
+
+    height: 46px;
+
     padding: 10px;
-    margin: 8px 0;
+
+    margin: 5px 0 8px;
+
     border-radius: 10px;
-    font-size: 20px;
-    background-color:white;
-    color:#4c3320;
-    border:2px solid white;
+
+    font-size: 17px;
+
+    background-color: white;
+
+    color: #4c3320;
+
+    border: 2px solid white;
+
+    outline: none;
+
     font-family: 'Times New Roman', Times, serif;
-    
-    
 }
 
-.eye-icon{
-    position: absolute;
-    right: 28px;
-    top: 41.5%;
-    transform: translateY(-50%);
-    color:#4c3320;
-    cursor: pointer;
-    font-size: 20px;
+
+.input-box input:focus {
+    border: 2px solid #dc9766;
 }
 
-.input-box ::placeholder {
+
+.input-box input::placeholder {
     color: #6b3e26;
+
     font-size: 16px;
-    
 }
 
 
+/* ================= EYE ICON ================= */
 
-.inputhead1 {
-    padding-right: 179px;
-    
-    color:#dc9766; 
-    font-family: 'Times New Roman', Times, serif;
+.eye-icon {
+    position: absolute;
+
+    right: 28px;
+
+    /* Password input ke according */
+    top: 48%;
+
+    transform: translateY(-50%);
+
+    color: #4c3320;
+
+    cursor: pointer;
+
     font-size: 18px;
-    margin-left: -90px;
-    font-weight: 3400;
 }
 
-.inputhead2{
-    padding-right: 160px;
-    
-    color:#dc9766;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    margin-left: -90px;
-}
 
-.inputhead3{
-    padding-right: 160px;
-    
-    color:#dc9766;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    margin-left: -90px;
-}
-
+/* ================= SOCIAL BUTTONS ================= */
 
 .social-btn1 {
-   justify-content: space-between;
-   margin-top: 40px;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-top: 28px;
+
+    gap: 14px;
 }
 
 
-.google-btn1{
-    color: #6b3e26;
+.google-btn1,
+.phone-btn1 {
+    width: 90%;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 7px;
+
     background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    width: 90%;
-}
 
-
-.phone-btn1{
     color: #6b3e26;
-    background-color:white;
+
     font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    width: 90%;
-    margin-top: 15px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: 0.3s;
 }
 
+
+.google-btn1:hover,
+.phone-btn1:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* ================= ICONS ================= */
+
+.logo-ggl1,
+.logo-phn1 {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 15px;
+}
+
+
+/* ================= CREATE ACCOUNT ================= */
 
 .acc-btn1 {
-    margin-top: 20px;
-    margin-left: 100px;
-    background-color:#6b3e26;
-    color: #dc9766;
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
+    display: block;
+
     width: 200px;
+
+    height: 54px;
+
+    margin: 20px auto 0;
+
+    background-color: #6b3e26;
+
+    color: #dc9766;
+
+    font-size: 20px;
+
+    font-family: 'Times New Roman', Times, serif;
+
     font-weight: 300;
-    border: #6b3e26;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
 }
 
-.acc-btn1:hover{
+
+.acc-btn1:hover {
     background-color: #4c3320;
-    border:4px solid rgb(202, 186, 164);
+
+    color: #f2edea;
 }
 
 
+/* ================================================= */
+/*                    TABLET                         */
+/* ================================================= */
 
-.logo-ggl1{
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-    font-weight: bolder;
+@media (max-width: 768px) {
+
+    .container {
+        padding-top: 125px;
+        padding-bottom: 80px;
+    }
+
+    .card {
+        width: 470px;
+    }
 
 }
 
-.logo-phn1{
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-    font-weight: bolder;
 
+/* ================================================= */
+/*                    MOBILE                         */
+/* ================================================= */
+
+@media (max-width: 570px) {
+
+    .container {
+        padding-top: 105px;
+        padding-bottom: 70px;
+    }
+
+    .card {
+        width: 95%;
+
+        padding: 15px;
+
+        border-radius: 20px;
+    }
+
+    .card h1 {
+        font-size: 26px;
+    }
+
+    .input-box {
+        padding: 13px;
+    }
+
+    .heading1 {
+        font-size: 18px;
+    }
+
+    .inputhead1,
+    .inputhead2,
+    .inputhead3 {
+        font-size: 16px;
+    }
+
+    .input-box input {
+        height: 44px;
+
+        font-size: 16px;
+    }
+
+    .google-btn1,
+    .phone-btn1 {
+        width: 95%;
+
+        font-size: 15px;
+    }
+
+    .acc-btn1 {
+        width: 180px;
+
+        height: 50px;
+
+        font-size: 18px;
+    }
 }
 
+
+/* ================================================= */
+/*                 SMALL MOBILE                      */
+/* ================================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        padding-top: 95px;
+    }
+
+    .card {
+        width: 94%;
+
+        padding: 12px;
+    }
+
+    .card h1 {
+        font-size: 24px;
+    }
+
+    .input-box {
+        padding: 10px;
+    }
+
+    .heading1 {
+        font-size: 16px;
+    }
+
+    .inputhead1,
+    .inputhead2,
+    .inputhead3 {
+        font-size: 15px;
+    }
+
+    .input-box input {
+        height: 42px;
+
+        font-size: 15px;
+    }
+
+    .eye-icon {
+        right: 22px;
+        font-size: 16px;
+    }
+
+    .google-btn1,
+    .phone-btn1 {
+        width: 100%;
+
+        height: 44px;
+
+        font-size: 14px;
+    }
+
+    .acc-btn1 {
+        width: 170px;
+
+        height: 47px;
+
+        font-size: 17px;
+    }
+}

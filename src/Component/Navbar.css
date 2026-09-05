@@ -171,10 +171,13 @@ border: 2px solid rgb(73, 44, 44);
    margin: 5px 0;
    cursor: pointer;
 }
+
 .dropdown-content .heading1{
    margin: 0;
-   font: 20px;
+   font-size: 24px;
+   font-family:  serif;
    cursor: pointer;
+   color:rgb(72, 47, 47);
 }
 
 .dropdown-content p:hover{
@@ -229,7 +232,9 @@ border: 2px solid rgb(73, 44, 44);
      
 }
 
-
+.heading2{
+    color:rgb(72, 47, 47);
+}
 
 
 

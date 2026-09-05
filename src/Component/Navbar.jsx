@@ -127,20 +127,27 @@ export default function Navbar() {
                 </Link>
               
                 <p>
-                  New Customer? <a href="#">start here</a>
+                  New Customer? <Link to="/signup">start here</Link>
                 </p>
               </div>
               <div className="dropdown-content">
                 <div>
-                  <h4 className="heading1">your Lists</h4>
-                  <p>Create a Wish List</p>
-                  <p></p>
+                  {/* <h4 className="heading1">your Lists</h4> */}
+                  <Link to="/wishlist">
+                   <h4 className="heading1">Create a Wish List</h4>
+                  </Link>
+
+                  {/* <p>Create a Wish List</p> */}
+                  
                 </div>
                 <div>
-                  <h4 className="heading2">Your Account</h4>
+                  <Link to="/account">
+                  <h4 className="heading2">Your Account</h4></Link>
+                  {/* <Link to="/account">
                   <p>Your Account</p>
+                   </Link>
                   <p>Your Orders</p>
-                  <p>Your Wish list</p>
+                  <p>Your Wish list</p> */}
                 </div>
               </div>
             </div>
