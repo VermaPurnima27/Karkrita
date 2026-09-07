@@ -24,7 +24,7 @@ export default function Signin() {
           <h1>login In</h1>
 
           <div className="form-box">
-            <p className='heading'>Log in to your Desi world</p>
+            <p className='heading'>Sign in to your Desi world</p>
 
             <span className='s1'>Email:</span>
             <input type="email" name="email1" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
