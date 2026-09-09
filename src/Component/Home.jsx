@@ -137,10 +137,10 @@
 //     <div className="product-image">
 //       <img src={bamboo_lamp} alt="Linn Midi Dress"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Linn Midi Dress</h3>
-//       <p class="product-prize">$89.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Linn Midi Dress</h3>
+//       <p className="product-prize">$89.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -149,10 +149,10 @@
 //     <div className="product-image">
 //       <img src={img2} alt="Casual Blazer"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title"></h3>
-//       <p class="product-prize">$120.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title"></h3>
+//       <p className="product-prize">$120.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -161,10 +161,10 @@
 //     <div className="product-image">
 //       <img src={img15} alt="Ribbed Knit Top"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Jaipuri Wall Art</h3>
-//       <p class="product-prize">$45.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Jaipuri Wall Art</h3>
+//       <p className="product-prize">$45.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -173,10 +173,10 @@
 //     <div className="product-image">
 //       <img src={img12} alt="Denim Jacket"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Deer Wall Decor</h3>
-//       <p class="product-prize">$98.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Deer Wall Decor</h3>
+//       <p className="product-prize">$98.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 // </div>
@@ -192,10 +192,10 @@
 //     <div className="product-image">
 //       <img src={img14} alt="Linn Midi Dress"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Desk Dtems</h3>
-//       <p class="product-prize">$89.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Desk Dtems</h3>
+//       <p className="product-prize">$89.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -204,10 +204,10 @@
 //     <div className="product-image">
 //       <img src={deer} alt="Casual Blazer"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Candle Stand</h3>
-//       <p class="product-prize">$120.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Candle Stand</h3>
+//       <p className="product-prize">$120.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -216,10 +216,10 @@
 //     <div className="product-image">
 //       <img src={bastar} alt="Ribbed Knit Top"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Bastar art</h3>
-//       <p class="product-prize">$45.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Bastar art</h3>
+//       <p className="product-prize">$45.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -228,10 +228,10 @@
 //     <div className="product-image">
 //       <img src={rajsthani} alt="Denim Jacket"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Rajisthani Idol</h3>
-//       <p class="product-prize">$98.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Rajisthani Idol</h3>
+//       <p className="product-prize">$98.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 // </div>
@@ -247,10 +247,10 @@
 //     <div className="product-image">
 //       <img src={img16} alt="Linn Midi Dress"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Tortoise Saunf Supari set</h3>
-//       <p class="product-prize">$89.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Tortoise Saunf Supari set</h3>
+//       <p className="product-prize">$89.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -259,10 +259,10 @@
 //     <div className="product-image">
 //       <img src={img9} alt="Casual Blazer"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Fruit Bowl</h3>
-//       <p class="product-prize">$120.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Fruit Bowl</h3>
+//       <p className="product-prize">$120.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -271,10 +271,10 @@
 //     <div className="product-image">
 //       <img src={img19} alt="Ribbed Knit Top"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Tissu Stand</h3>
-//       <p class="product-prize">$45.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Tissu Stand</h3>
+//       <p className="product-prize">$45.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -283,10 +283,10 @@
 //     <div className="product-image">
 //       <img src={bastarart51} alt="Denim Jacket"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Tea Stand</h3>
-//       <p class="product-prize">$98.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Tea Stand</h3>
+//       <p className="product-prize">$98.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 // </div>
@@ -301,10 +301,10 @@
 //     <div className="product-image">
 //       <img src={fs1} alt="Linn Midi Dress"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Choker</h3>
-//       <p class="product-prize">$89.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Choker</h3>
+//       <p className="product-prize">$89.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -313,10 +313,10 @@
 //     <div className="product-image">
 //       <img src={f2} alt="Casual Blazer"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Kauri Choker Set</h3>
-//       <p class="product-prize">$120.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Kauri Choker Set</h3>
+//       <p className="product-prize">$120.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -325,10 +325,10 @@
 //     <div className="product-image">
 //       <img src={f1} alt="Ribbed Knit Top"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Bastar Jwellery</h3>
-//       <p class="product-prize">$45.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Bastar Jwellery</h3>
+//       <p className="product-prize">$45.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -337,10 +337,10 @@
 //     <div className="product-image">
 //       <img src={cshirt} alt="Denim Jacket"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Cotton Block Printed Shirt</h3>
-//       <p class="product-prize">$98.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Cotton Block Printed Shirt</h3>
+//       <p className="product-prize">$98.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 // </div>
@@ -356,10 +356,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={bag} alt="Linn Midi Dress"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">stylish bag</h3>
-//       <p class="product-prize">$89.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">stylish bag</h3>
+//       <p className="product-prize">$89.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -368,10 +368,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={f0} alt="bag"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">gujrati bag</h3>
-//       <p class="product-prize">$120.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">gujrati bag</h3>
+//       <p className="product-prize">$120.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -380,10 +380,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={f8} alt="Ribbed Knit Top"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">joot bag</h3>
-//       <p class="product-prize">$45.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">joot bag</h3>
+//       <p className="product-prize">$45.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -392,10 +392,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={f6} alt="Denim Jacket"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">bag</h3>
-//       <p class="product-prize">$98.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">bag</h3>
+//       <p className="product-prize">$98.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 // </div>
@@ -410,10 +410,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={jwe} alt="Linn Midi Dress"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Gujrati Neckless</h3>
-//       <p class="product-prize">$89.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Gujrati Neckless</h3>
+//       <p className="product-prize">$89.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -422,10 +422,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={img22} alt="bag"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Wall things</h3>
-//       <p class="product-prize">$120.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Wall things</h3>
+//       <p className="product-prize">$120.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -434,10 +434,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={img27} alt="Ribbed Knit Top"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Idols</h3>
-//       <p class="product-prize">$45.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Idols</h3>
+//       <p className="product-prize">$45.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -446,10 +446,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={img31} alt="Denim Jacket"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Hair Belt</h3>
-//       <p class="product-prize">$98.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Hair Belt</h3>
+//       <p className="product-prize">$98.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 // </div>
@@ -461,10 +461,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={img28} alt="Linn Midi Dress"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Cort Set</h3>
-//       <p class="product-prize">$89.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Cort Set</h3>
+//       <p className="product-prize">$89.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -473,10 +473,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={img26} alt="bag"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">show piece</h3>
-//       <p class="product-prize">$120.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">show piece</h3>
+//       <p className="product-prize">$120.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -485,10 +485,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={img32} alt="Ribbed Knit Top"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">neck piece</h3>
-//       <p class="product-prize">$45.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">neck piece</h3>
+//       <p className="product-prize">$45.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 
@@ -497,10 +497,10 @@
 //     <div className="product-image">
 //       <img className="bag" src={img230} alt="Denim Jacket"/>
 //     </div>
-//     <div class="product-information">
-//       <h3 class="product-title">Hair Accesseries</h3>
-//       <p class="product-prize">$98.00</p>
-//       <button class="shop-btn">Shop Now</button>
+//     <div className="product-information">
+//       <h3 className="product-title">Hair Accesseries</h3>
+//       <p className="product-prize">$98.00</p>
+//       <button className="shop-btn">Shop Now</button>
 //     </div>
 //   </div>
 // </div>
@@ -544,21 +544,32 @@ import img28 from './image/img28.png'
 import img32 from './image/img32.jpg'
 import img22 from './image/img22.jpg'
 import jwe from './image/jwe.jpg'
-
-
-import rakhi from './image/rakhi.jpg';
-
 import rajsthani from './image/rajsthani.jpg';
-
-import gond_p from './image/gond_painting.webp';
 import deer from './image/Deer_candle_stand.webp';
+import { useNavigate } from 'react-router-dom';
 
-// import "@fortawesome/fontawesome-free/css/all.min.css";
+
+// import rakhi from './image/rakhi.jpg';
+// import gond_p from './image/gond_painting.webp';
+
+
 
 
 
 
 export default function Home() {
+
+   const navigate = useNavigate();
+
+  const handleShopNow = (product) => {
+
+    localStorage.setItem(
+      "selectedProduct",
+      JSON.stringify(product)
+    );
+
+    navigate("/product");
+  };
   return (
     <>
      <section className='hero'> 
@@ -648,48 +659,80 @@ export default function Home() {
   {/* <!-- Product Box 1 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={bamboo_lamp} alt="Linn Midi Dress"/>
+      <img src={bamboo_lamp} alt="bamboo lamp"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Linn Midi Dress</h3>
-      <p class="product-prize">$89.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Bamboo Lamp</h3>
+      <p className="product-prize">400 Rs.</p>
+      <button className="shop-btn"  onClick={() =>
+    handleShopNow({
+      name: "bamboo mlamp",
+      price: 400,
+      image: bamboo_lamp,
+      category: "Home Decor",
+      description: "Beautiful handmade traditional home decor product."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 2 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={img2} alt="Casual Blazer"/>
+      <img src={img2} alt="wall hanging"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title"></h3>
-      <p class="product-prize">$120.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Wall Hanging</h3>
+      <p className="product-prize">210 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Wall Hanging",
+      price: 120,
+      image: img2,
+      category: "Home Decor",
+      description: "Beautiful traditional handmade wall decoration."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 3 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={img15} alt="Ribbed Knit Top"/>
+      <img src={img15} alt="jaipuri wall art"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Jaipuri Wall Art</h3>
-      <p class="product-prize">$45.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Jaipuri Wall Art</h3>
+      <p className="product-prize">199 Rs.</p>
+      <button className="shop-btn"  onClick={() =>
+    handleShopNow({
+      name: "Jaipuri Wall Art",
+      price: 199,
+      image: img15,
+      category: "Home Decor",
+      description: "Traditional Jaipuri handmade wall art."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 4 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={img12} alt="Denim Jacket"/>
+      <img src={img12} alt="Deer Wall Decor"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Deer Wall Decor</h3>
-      <p class="product-prize">$98.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Deer Wall Decor</h3>
+      <p className="product-prize">899 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Deer Wall Decor",
+      price: 899,
+      image: img12,
+      category: "Home Decor",
+      description: "Elegant handmade deer wall decoration."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 </div>
@@ -703,48 +746,81 @@ export default function Home() {
   {/* <!-- Product Box 1 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={img14} alt="Linn Midi Dress"/>
+      <img src={img14} alt="Desk Items"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Desk Dtems</h3>
-      <p class="product-prize">$89.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Desk Items</h3>
+      <p className="product-prize">460 Rs.</p>
+      <button className="shop-btn"  onClick={() =>
+    handleShopNow({
+      name: "Desk Items",
+      price:460 ,
+      image: img14,
+      category: "Craft",
+      description: "Beautiful handmade desk decoration."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
 {/* <!-- Product Box 2 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={deer} alt="Casual Blazer"/>
+      <img src={deer} alt="Candle Stand"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Candle Stand</h3>
-      <p class="product-prize">$120.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Candle Stand</h3>
+      <p className="product-prize">120.00 Rs.</p>
+      <button className="shop-btn" 
+  onClick={() =>
+    handleShopNow({
+      name: "Candle Stand",
+      price: 120,
+      image: deer,
+      category: "Craft",
+      description: "Handcrafted decorative candle stand."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 3 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={bastar} alt="Ribbed Knit Top"/>
+      <img src={bastar} alt="Bastar art"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Bastar art</h3>
-      <p class="product-prize">$45.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Bastar art</h3>
+      <p className="product-prize">920.00 Rs.</p>
+      <button className="shop-btn"onClick={() =>
+    handleShopNow({
+      name: "Bastar Art",
+      price: 920,
+      image: bastar,
+      category: "Craft",
+      description: "Authentic traditional Bastar artwork."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 4 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={rajsthani} alt="Denim Jacket"/>
+      <img src={rajsthani} alt="Rajisthani Idol"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Rajisthani Idol</h3>
-      <p class="product-prize">$98.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Rajisthani Idol</h3>
+      <p className="product-prize">98 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Rajasthani Idol",
+      price: 98,
+      image: rajsthani,
+      category: "Craft",
+      description: "Traditional handcrafted Rajasthani idol."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 </div>
@@ -758,48 +834,80 @@ export default function Home() {
   {/* <!-- Product Box 1 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={img16} alt="Linn Midi Dress"/>
+      <img src={img16} alt="Tortoise Saunf Supari set"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Tortoise Saunf Supari set</h3>
-      <p class="product-prize">$89.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Tortoise Saunf Supari set</h3>
+      <p className="product-prize">640.00 Rs</p>
+      <button className="shop-btn"  onClick={() =>
+    handleShopNow({
+      name: "Tortoise Saunf Supari set",
+      price: 640,
+      image: "Tortoise Saunf Supari set",
+      category: "Kitchen & Dining",
+      description: "Beautiful handmade traditional Tortoise Saunf Supari set."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
 {/* <!-- Product Box 2 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={img9} alt="Casual Blazer"/>
+      <img src={img9} alt="Fruit Bowl"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Fruit Bowl</h3>
-      <p class="product-prize">$120.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Fruit Bowl</h3>
+      <p className="product-prize">690 Rs.</p>
+      <button className="shop-btn"  onClick={() =>
+    handleShopNow({
+      name: "Fruit Bowl",
+      price: 690,
+      image: "Fruit Bowl",
+      category: "Kitchen & Dining",
+      description: "Beautiful handmade traditional Fruit Bowl."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 3 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={img19} alt="Ribbed Knit Top"/>
+      <img src={img19} alt="Tissu Stand"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Tissu Stand</h3>
-      <p class="product-prize">$45.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Tissu Stand</h3>
+      <p className="product-prize">99 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Tissu Stand",
+      price: 99,
+      image: "Tissu Stand",
+      category: "Kitchen & Dining",
+      description: "Beautiful handmade traditional Tissu Stand."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 4 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={bastarart51} alt="Denim Jacket"/>
+      <img src={bastarart51} alt="Tea Stand"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Tea Stand</h3>
-      <p class="product-prize">$98.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Tea Stand</h3>
+      <p className="product-prize">260 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Tea Stand",
+      price: 260,
+      image: "Tea Stand",
+      category: "Kitchen & Dining",
+      description: "Beautiful handmade Tea Stand."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 </div>
@@ -812,48 +920,80 @@ export default function Home() {
   {/* <!-- Product Box 1 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={fs1} alt="Linn Midi Dress"/>
+      <img src={fs1} alt="Choker"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Choker</h3>
-      <p class="product-prize">$89.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Choker</h3>
+      <p className="product-prize">288 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Choker",
+      price: 288,
+      image: "Choker",
+      category: "Fashion Accessories",
+      description: "Beautiful handmade Choker."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
 {/* <!-- Product Box 2 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={f2} alt="Casual Blazer"/>
+      <img src={f2} alt="Kauri Choker Set"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Kauri Choker Set</h3>
-      <p class="product-prize">$120.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Kauri Choker Set</h3>
+      <p className="product-prize">250 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Kauri Choker Set",
+      price: 250,
+      image: "Kauri Choker Set",
+      category: "Fashion Accessories",
+      description: "Beautiful handmade Kauri Choker Set."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 3 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={f1} alt="Ribbed Knit Top"/>
+      <img src={f1} alt="Bastar Jwellery"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Bastar Jwellery</h3>
-      <p class="product-prize">$45.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Bastar Jwellery</h3>
+      <p className="product-prize">401 Rs</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Bastar Jwellery",
+      price: 401,
+      image: "Bastar Jwellery",
+      category: "Fashion Accessories",
+      description: "Beautiful handmade Bastar Jwellery."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 4 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img src={cshirt} alt="Denim Jacket"/>
+      <img src={cshirt} alt="Cotton Block Printed Shirt"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Cotton Block Printed Shirt</h3>
-      <p class="product-prize">$98.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Cotton Block Printed Shirt</h3>
+      <p className="product-prize">399 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Cotton Block Printed Shirt",
+      price: 399,
+      image: "Cotton Block Printed Shirt",
+      category: "Fashion Accessories",
+      description: "Beautiful handmade Cotton Block Printed Shirt."
+    })
+  }>Shop Now</button>
     </div>
   </div>
 </div>
@@ -867,12 +1007,20 @@ export default function Home() {
   {/* <!-- Product Box 1 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={bag} alt="Linn Midi Dress"/>
+      <img className="bag" src={bag} alt="stylish bag"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">stylish bag</h3>
-      <p class="product-prize">$89.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">stylish bag</h3>
+      <p className="product-prize">658 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "stylish bag",
+      price: 658,
+      image: "stylish bag",
+      category: "Bag collections",
+      description: "Beautiful handmade stylish bag"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
@@ -881,34 +1029,58 @@ export default function Home() {
     <div className="product-image">
       <img className="bag" src={f0} alt="bag"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">gujrati bag</h3>
-      <p class="product-prize">$120.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">gujrati bag</h3>
+      <p className="product-prize">345 Rs.</p>
+      <button className="shop-btn"  onClick={() =>
+    handleShopNow({
+      name: "gujrati bag",
+      price: 345,
+      image: "gujrati bag",
+      category: "Bag collections",
+      description: "Beautiful handmade gujrati bag"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 3 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={f8} alt="Ribbed Knit Top"/>
+      <img className="bag" src={f8} alt="joot bag"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">joot bag</h3>
-      <p class="product-prize">$45.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">joot bag</h3>
+      <p className="product-prize">599 Rs.</p>
+      <button className="shop-btn"onClick={() =>
+    handleShopNow({
+      name: "joot bag",
+      price: 599,
+      image: "joot bag",
+      category: "Bag collections",
+      description: "Beautiful handmade joot bag"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 4 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={f6} alt="Denim Jacket"/>
+      <img className="bag" src={f6} alt="bag"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">bag</h3>
-      <p class="product-prize">$98.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">bag</h3>
+      <p className="product-prize">640 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "joot bag",
+      price: 599,
+      image: "joot bag",
+      category: "Bag collections",
+      description: "Beautiful handmade joot bag"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 </div>
@@ -921,48 +1093,80 @@ export default function Home() {
   {/* <!-- Product Box 1 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={jwe} alt="Linn Midi Dress"/>
+      <img className="bag" src={jwe} alt="Gujrati Neckless"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Gujrati Neckless</h3>
-      <p class="product-prize">$89.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Gujrati Neckless</h3>
+      <p className="product-prize">210 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Gujrati Neckless",
+      price: 210,
+      image: "Gujrati Neckless",
+      category: "Shop by category",
+      description: "Beautiful handmade Gujrati Neckless"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 2 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={img22} alt="bag"/>
+      <img className="bag" src={img22} alt="Wall things"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Wall things</h3>
-      <p class="product-prize">$120.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Wall things</h3>
+      <p className="product-prize">370 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Wall things",
+      price: 210,
+      image: "Wall things",
+      category: "Shop by category",
+      description: "Beautiful handmade Wall things"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 3 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={img27} alt="Ribbed Knit Top"/>
+      <img className="bag" src={img27} alt="Idols"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Idols</h3>
-      <p class="product-prize">$45.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Idols</h3>
+      <p className="product-prize">400 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Idols",
+      price: 400,
+      image: "Idols",
+      category: "Shop by category",
+      description: "Beautiful handmade Idols"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 4 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={img31} alt="Denim Jacket"/>
+      <img className="bag" src={img31} alt="Hair Belt"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Hair Belt</h3>
-      <p class="product-prize">$98.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Hair Belt</h3>
+      <p className="product-prize">150 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Hair Belt",
+      price: 150,
+      image: "Hair Belt",
+      category: "Shop by category",
+      description: "Beautiful handmade Hair Belt"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 </div>
@@ -972,48 +1176,80 @@ export default function Home() {
   {/* <!-- Product Box 5 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={img28} alt="Linn Midi Dress"/>
+      <img className="bag" src={img28} alt="Cort Set"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Cort Set</h3>
-      <p class="product-prize">$89.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Cort Set</h3>
+      <p className="product-prize">499 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Cort Set",
+      price: 499,
+      image: "Cort Set",
+      category: "Shop by category",
+      description: "Beautiful handmade Cort Set"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 6 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={img26} alt="bag"/>
+      <img className="bag" src={img26} alt="show piece"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">show piece</h3>
-      <p class="product-prize">$120.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">show piece</h3>
+      <p className="product-prize">369 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "show piece",
+      price: 369,
+      image: "show piece",
+      category: "Shop by category",
+      description: "Beautiful handmade show piece"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 7 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={img32} alt="Ribbed Knit Top"/>
+      <img className="bag" src={img32} alt="neck piece"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">neck piece</h3>
-      <p class="product-prize">$45.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">neck piece</h3>
+      <p className="product-prize">299 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "neck piece",
+      price: 299,
+      image: "neck piece",
+      category: "Shop by category",
+      description: "Beautiful handmade neck piece"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 
   {/* <!-- Product Box 8 --> */}
   <div className="product-card">
     <div className="product-image">
-      <img className="bag" src={img230} alt="Denim Jacket"/>
+      <img className="bag" src={img230} alt="Hair Accesseries"/>
     </div>
-    <div class="product-information">
-      <h3 class="product-title">Hair Accesseries</h3>
-      <p class="product-prize">$98.00</p>
-      <button class="shop-btn">Shop Now</button>
+    <div className="product-information">
+      <h3 className="product-title">Hair Accesseries</h3>
+      <p className="product-prize">130 Rs.</p>
+      <button className="shop-btn" onClick={() =>
+    handleShopNow({
+      name: "Hair Accesseries",
+      price: 130,
+      image: "Hair Accesseries",
+      category: "Shop by category",
+      description: "Beautiful handmade Hair Accesseries"
+    })
+  }>Shop Now</button>
     </div>
   </div>
 </div>

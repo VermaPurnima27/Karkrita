@@ -223,7 +223,20 @@
 }
 
 
-/* ================= PRODUCT ================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .product-row {
     display: flex;
@@ -244,11 +257,11 @@
     border: 1px solid #ddd;
 }
 
-.product-details {
+.product-info {
     flex: 1;
 }
 
-.product-details h3 {
+.product-info h3 {
     margin: 0 0 10px;
 
     font-size: 20px;
@@ -256,7 +269,7 @@
     color: #4f3939;
 }
 
-.product-details p {
+.product-info p {
     margin: 7px 0;
 
     color: #666;
@@ -264,13 +277,13 @@
     font-size: 14px;
 }
 
-.product-details strong {
+.product-info strong {
     display: block;
 
     margin-top: 12px;
 
     font-size: 17px;
-}
+} 
 
 
 /* ================= BUTTONS ================= */

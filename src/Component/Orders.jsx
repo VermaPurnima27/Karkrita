@@ -151,7 +151,7 @@ export default function Orders() {
                   alt={order.name}
                 />
 
-                <div className="product-details">
+                <div className="product-info">
 
                   <h3>
                     {order.name}

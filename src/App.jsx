@@ -11,6 +11,7 @@ import Cart from './Component/Cart';
 import Search from './Component/Search';
 import Account from "./Component/Account";
 import Wishlist from "./Component/Wishlist";
+// import ProductDetails from './Component/ProductDetails';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -28,8 +29,7 @@ export default function App() {
       {/* Pages */}
       <Routes>
 
-        {/* Signin Page */}
-        <Route path="/signin" element={<Signin />} />
+  
 
         {/* Home Page */}
         <Route path="/" element={<Home />} />
@@ -47,7 +47,7 @@ export default function App() {
         {/*wishlist  Page */}
         <Route path="/wishlist" element={<Wishlist />} />
 
-        
+        {/* <Route  path="/product" element={<ProductDetails />} /> */}
 
         {/*signup  Page */}
         <Route path="/signup" element={<Signup />} />
