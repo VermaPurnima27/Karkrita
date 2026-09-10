@@ -22,11 +22,7 @@ export default function Secondnav() {
             <div className="secondNavbar">
 
                 {/* MENU ICON */}
-
-                <div
-                    className="menuIcon"
-                    onClick={() => setMenuOpen(true)}
-                >
+                <div className="menuIcon" onClick={() => setMenuOpen(true)}>
                     <FaBars />
                 </div>
 
@@ -35,42 +31,25 @@ export default function Secondnav() {
 
                 <div className="menuLinks">
 
-                    <Link to="/">
-                        Home
-                    </Link>
+                    <Link to="/"> Home</Link>
 
-                    <Link to="/categories">
-                        Categories
-                    </Link>
+                    
+                    <Link to="/category">Categories</Link>
 
-                    <Link to="/new-arrivals">
-                        New Arrivals
-                    </Link>
+                    <Link to="/new-arrivals"> New Arrivals</Link>
 
-                    <Link to="/best-sellers">
-                        Best Sellers
-                    </Link>
+                    <Link to="/best-sellers">Best Sellers</Link>
 
-                    <Link to="/artisans">
-                        Artisans
-                    </Link>
+                    <Link to="/artisans"> Artisans</Link>
 
-                    <Link to="/about">
-                        About
-                    </Link>
+                    <Link to="/about">About</Link>
 
-                    <Link to="/contact">
-                        Contact
-                    </Link>
+                    <Link to="/contact"> Contact</Link>
 
 
                     {/* SEARCH */}
 
-                    <Link
-                        to="/search"
-                        className="searchNavBtn"
-                    >
-                        
+                    <Link to="/search" className="searchNavBtn">
                         <span>Search</span>
                     </Link>
 
@@ -81,104 +60,42 @@ export default function Secondnav() {
 
 
             {/* ================= SIDE MENU ================= */}
-
-            <div
-                className={
-                    menuOpen
-                        ? "sideMenu active"
-                        : "sideMenu"
-                }
-            >
+            <div className={menuOpen? "sideMenu active": "sideMenu"}>
 
                 {/* CLOSE BUTTON */}
-
-                <div className="closeBtn">
-
-                    <FaTimes
-                        onClick={closeMenu}
-                    />
-
-                </div>
+                <div className="closeBtn"><FaTimes onClick={closeMenu}/></div>
 
 
                 {/* SEARCH */}
-
-                <Link
-                    to="/search"
-                    onClick={closeMenu}
-                >
-                    🔍 Search
-                </Link>
+                <Link to="/search" onClick={closeMenu}>🔍 Search</Link>
 
 
                 {/* HOME */}
-
-                <Link
-                    to="/"
-                    onClick={closeMenu}
-                >
-                    🏠 Home
-                </Link>
+                <Link  to="/" onClick={closeMenu}>🏠 Home</Link>
 
 
                 {/* CATEGORIES */}
-
-                <Link
-                    to="/categories"
-                    onClick={closeMenu}
-                >
-                    📂 Categories
-                </Link>
+                <Link to="/signin" onClick={closeMenu}> 🔐 Signin</Link>
 
 
                 {/* NEW ARRIVALS */}
-
-                <Link
-                    to="/new-arrivals"
-                    onClick={closeMenu}
-                >
-                    ⭐ New Arrivals
-                </Link>
+                <Link to="/signup" onClick={closeMenu}>⭐ Signup</Link>
 
 
                 {/* BEST SELLERS */}
-
-                <Link
-                    to="/best-sellers"
-                    onClick={closeMenu}
-                >
-                    🔥 Best Sellers
-                </Link>
+                <Link to="/wishlist" onClick={closeMenu}> 🧡 Create a Wish List</Link>
 
 
                 {/* ARTISANS */}
-
-                <Link
-                    to="/artisans"
-                    onClick={closeMenu}
-                >
-                    👨‍🎨 Artisans
-                </Link>
+                <Link to="/cart" onClick={closeMenu}>🛒 Cart</Link>
 
 
                 {/* ABOUT */}
-
-                <Link
-                    to="/about"
-                    onClick={closeMenu}
-                >
-                    ℹ About
-                </Link>
+                <Link to="/orders" onClick={closeMenu}>📦 Your Orders</Link>
 
 
                 {/* CONTACT */}
-
-                <Link
-                    to="/contact"
-                    onClick={closeMenu}
-                >
-                    📞 Contact
-                </Link>
+                <Link to="/account" onClick={closeMenu}>👤 Your Account</Link>
 
             </div>
 

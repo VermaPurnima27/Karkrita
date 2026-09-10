@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 
 
+
 export default function Navbar() {
   const [search, setSearch] = useState('');
   const [category, setCategory] = useState(''); // keep selected category

@@ -11,6 +11,7 @@ import Cart from './Component/Cart';
 import Search from './Component/Search';
 import Account from "./Component/Account";
 import Wishlist from "./Component/Wishlist";
+import Category from "./Component/Category";
 // import ProductDetails from './Component/ProductDetails';
 
 
@@ -30,7 +31,6 @@ export default function App() {
       <Routes>
 
   
-
         {/* Home Page */}
         <Route path="/" element={<Home />} />
 
@@ -39,7 +39,8 @@ export default function App() {
 
           {/*cart  Page */}
         <Route path="/cart" element={<Cart />} />
-
+        
+        <Route path="/category" element={<Category />} />
 
         {/*account  Page */}
         <Route path="/account" element={<Account />} />
@@ -54,7 +55,6 @@ export default function App() {
 
         {/*signup  Page */}
          <Route path="/signin" element={<Signin />} />
-
 
         {/*search  Page */}
         <Route path="/search" element={<Search />} />

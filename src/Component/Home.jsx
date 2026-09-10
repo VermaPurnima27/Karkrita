@@ -546,7 +546,7 @@ import img22 from './image/img22.jpg'
 import jwe from './image/jwe.jpg'
 import rajsthani from './image/rajsthani.jpg';
 import deer from './image/Deer_candle_stand.webp';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 // import rakhi from './image/rakhi.jpg';
@@ -1087,7 +1087,9 @@ export default function Home() {
 
  {/*-------------------------- section six----------------------*/}
 <div className="section-heading">
+  
   <h2>Shop by category</h2>
+   
 </div>
 <div className="products-con">
   {/* <!-- Product Box 1 --> */}
