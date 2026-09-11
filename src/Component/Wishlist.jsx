@@ -1,47 +1,94 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Wishlist.css";
 
-import { FaHeart, FaShoppingCart, FaTrash } from "react-icons/fa";
+import {
+    FaHeart,
+    FaShoppingCart,
+    FaTrash
+} from "react-icons/fa";
 
 export default function Wishlist() {
 
-    const [wishlist, setWishlist] = useState([
-        {
-            id: 1,
-            name: "Traditional Brass Camel",
-            price: 1299,
-            image: "/images/camel.jpg"
-        },
-        {
-            id: 2,
-            name: "Handmade Brass Bowl",
-            price: 899,
-            image: "/images/brass-bowl.jpg"
-        },
-        {
-            id: 3,
-            name: "Traditional Wooden Decor",
-            price: 1499,
-            image: "/images/wooden.jpg"
-        }
-    ]);
+    // ================= WISHLIST STATE =================
+
+    const [wishlist, setWishlist] = useState([]);
 
 
-    // Remove product
+    // ================= LOAD WISHLIST =================
+
+    useEffect(() => {
+
+        const savedWishlist =
+            JSON.parse(localStorage.getItem("wishlist")) || [];
+
+        setWishlist(savedWishlist);
+
+    }, []);
+
+
+    // ================= REMOVE PRODUCT =================
+
     function removeItem(id) {
-        setWishlist(
-            wishlist.filter((item) => item.id !== id)
+
+        const updatedWishlist =
+            wishlist.filter((item) => item.id !== id);
+
+        setWishlist(updatedWishlist);
+
+        localStorage.setItem(
+            "wishlist",
+            JSON.stringify(updatedWishlist)
         );
     }
 
 
-    // Add to cart
+    // ================= ADD TO CART =================
+
     function addToCart(item) {
+
+        const cart =
+            JSON.parse(localStorage.getItem("cart")) || [];
+
+        const existingItem = cart.find(
+            (cartItem) => cartItem.id === item.id
+        );
+
+        let updatedCart;
+
+        if (existingItem) {
+
+            updatedCart = cart.map((cartItem) =>
+                cartItem.id === item.id
+                    ? {
+                        ...cartItem,
+                        quantity:
+                            (cartItem.quantity || 1) + 1
+                    }
+                    : cartItem
+            );
+
+        } else {
+
+            updatedCart = [
+                ...cart,
+                {
+                    ...item,
+                    quantity: 1
+                }
+            ];
+        }
+
+        localStorage.setItem(
+            "cart",
+            JSON.stringify(updatedCart)
+        );
+
         alert(`${item.name} added to cart`);
     }
 
 
     return (
+
         <div className="wishlist-page">
 
             {/* ================= HEADER ================= */}
@@ -59,7 +106,7 @@ export default function Wishlist() {
             </div>
 
 
-            {/* ================= WISHLIST ================= */}
+            {/* ================= EMPTY WISHLIST ================= */}
 
             {wishlist.length === 0 ? (
 
@@ -67,7 +114,9 @@ export default function Wishlist() {
 
                     <FaHeart />
 
-                    <h2>Your Wishlist is Empty</h2>
+                    <h2>
+                        Your Wishlist is Empty
+                    </h2>
 
                     <p>
                         Save your favourite products here
@@ -84,6 +133,8 @@ export default function Wishlist() {
 
                 <div className="wishlist-container">
 
+                    {/* ================= TITLE ================= */}
+
                     <div className="wishlist-title">
 
                         <h2>
@@ -96,6 +147,8 @@ export default function Wishlist() {
 
                     </div>
 
+
+                    {/* ================= PRODUCTS ================= */}
 
                     <div className="wishlist-grid">
 
@@ -115,13 +168,18 @@ export default function Wishlist() {
                                         alt={item.name}
                                     />
 
+
+                                    {/* REMOVE BUTTON */}
+
                                     <button
                                         className="remove-btn"
                                         onClick={() =>
                                             removeItem(item.id)
                                         }
                                     >
+
                                         <FaTrash />
+
                                     </button>
 
                                 </div>
@@ -135,10 +193,13 @@ export default function Wishlist() {
                                         {item.name}
                                     </h3>
 
+
                                     <p className="wishlist-price">
                                         ₹{item.price}
                                     </p>
 
+
+                                    {/* ADD TO CART */}
 
                                     <button
                                         className="cart-btn"
@@ -166,5 +227,6 @@ export default function Wishlist() {
             )}
 
         </div>
+
     );
 }
