@@ -1,0 +1,264 @@
+
+/* ================= NEW ARRIVAL PAGE ================= */
+
+.new-arrival-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #F5F1EA;
+  padding: 145px 6% 70px;
+}
+
+
+/* ================= PAGE HEADING ================= */
+
+.new-arrival-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.new-arrival-heading h1 {
+  color: #452f26;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.new-arrival-heading p {
+  color: #765f53;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+/* ================= SECTION ================= */
+
+.new-section {
+  width: 100%;
+  margin-bottom: 65px;
+}
+
+
+/* ================= SECTION HEADING ================= */
+
+.new-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.new-section-heading span {
+  flex: 1;
+  height: 1px;
+  background: #dcd5cc;
+}
+
+.new-section-heading h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: normal;
+  color: #1a1a1a;
+  margin: 0 20px;
+  white-space: nowrap;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+.new-products-con {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  background-color: #f7f4ef;
+
+  padding: 20px;
+}
+
+
+/* ================= PRODUCT CARD ================= */
+
+.new-product-card {
+  background-color: #ffffff;
+  border: 1px solid #e0dad0;
+
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  transition: 0.3s ease;
+}
+
+.new-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(69, 47, 38, 0.15);
+}
+
+
+/* ================= IMAGE ================= */
+
+.new-product-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.new-product-image img {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover;
+  display: block;
+
+  transition: 0.4s ease;
+}
+
+.new-product-card:hover .new-product-image img {
+  transform: scale(1.04);
+}
+
+
+/* ================= INFORMATION ================= */
+
+.new-product-information {
+  padding: 15px;
+  text-align: left;
+}
+
+
+/* ================= TITLE ================= */
+
+.new-product-title {
+  font-family: "Playfair Display", serif;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #1a1a1a;
+
+  margin: 0 0 5px 0;
+}
+
+
+/* ================= PRICE ================= */
+
+.new-product-price {
+  font-size: 17px;
+  color: #1a1a1a;
+
+  font-weight: 600;
+
+  margin: 0 0 15px 0;
+}
+
+
+/* ================= BUTTON ================= */
+
+.new-shop-btn {
+  background-color: #a38567;
+
+  color: #ffffff;
+
+  border: none;
+
+  width: 100%;
+
+  padding: 10px;
+
+  font-size: 15px;
+
+  font-family: "Playfair Display", serif;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.new-shop-btn:hover {
+  background-color: #8e7256;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+  .new-arrival-page {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .new-products-con {
+    gap: 25px;
+  }
+
+  .new-product-card {
+    width: 300px;
+  }
+
+  .new-product-image img {
+    height: 280px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+  .new-arrival-page {
+    padding: 120px 5% 50px;
+  }
+
+  .new-arrival-heading h1 {
+    font-size: 35px;
+  }
+
+  .new-arrival-heading p {
+    font-size: 14px;
+  }
+
+  .new-section-heading {
+    margin: 30px 0;
+  }
+
+  .new-section-heading h2 {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  .new-products-con {
+    gap: 25px;
+    padding: 10px;
+  }
+
+  .new-product-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .new-product-image img {
+    height: 280px;
+  }
+
+  .new-product-title {
+    font-size: 17px;
+  }
+
+  .new-product-price {
+    font-size: 16px;
+  }
+
+  .new-shop-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

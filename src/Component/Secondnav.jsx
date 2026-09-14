@@ -35,7 +35,7 @@ export default function Secondnav() {
                     
                     <Link to="/category">Categories</Link>
 
-                    <Link to="/new-arrivals"> New Arrivals</Link>
+                    <Link to="/new-arrivals">New Arrivals</Link>
 
                     <Link to="/best-sellers">Best Sellers</Link>
 

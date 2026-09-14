@@ -1,0 +1,344 @@
+
+/* ================= ARTISANS PAGE ================= */
+
+.artisans-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #F5F1EA;
+  padding: 145px 6% 70px;
+}
+
+
+/* ================= PAGE HEADING ================= */
+
+.artisans-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.artisans-heading h1 {
+  color: #452f26;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.artisans-heading p {
+  color: #765f53;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+/* ================= INTRO ================= */
+
+.artisans-intro {
+  max-width: 800px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.artisans-intro h2 {
+  color: #452f26;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.artisans-intro p {
+  color: #5f514a;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* ================= ARTISAN CONTAINER ================= */
+
+.artisans-container {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px;
+
+  justify-items: center;
+}
+
+
+/* ================= ARTISAN CARD ================= */
+
+.artisan-card {
+  width: 100%;
+  max-width: 350px;
+
+  background: #ffffff;
+
+  border: 1px solid #e0dad0;
+
+  overflow: hidden;
+
+  transition: 0.3s ease;
+}
+
+.artisan-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 10px 25px rgba(69, 47, 38, 0.16);
+}
+
+
+/* ================= ARTISAN IMAGE ================= */
+
+.artisan-image {
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+}
+
+.artisan-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: 0.4s ease;
+}
+
+.artisan-card:hover .artisan-image img {
+  transform: scale(1.04);
+}
+
+
+/* ================= INFORMATION ================= */
+
+.artisan-information {
+  padding: 18px;
+  text-align: left;
+}
+
+
+/* ================= NAME ================= */
+
+.artisan-information h3 {
+  color: #452f26;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 21px;
+
+  font-weight: 600;
+
+  margin: 0 0 7px;
+}
+
+
+/* ================= LOCATION ================= */
+
+.artisan-location {
+  color: #765f53;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  margin: 0 0 10px;
+}
+
+
+/* ================= CRAFT ================= */
+
+.artisan-craft {
+  color: #a38567;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin: 0 0 10px;
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.artisan-description {
+  color: #5f514a;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  margin: 0 0 18px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.artisan-btn {
+  width: 100%;
+
+  padding: 10px;
+
+  background-color: #a38567;
+
+  color: #ffffff;
+
+  border: none;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: background 0.3s ease;
+}
+
+.artisan-btn:hover {
+  background-color: #452f26;
+}
+
+
+/* ================= BOTTOM SECTION ================= */
+
+.artisan-bottom {
+  max-width: 850px;
+
+  margin: 75px auto 0;
+
+  padding: 40px 20px;
+
+  text-align: center;
+
+  border-top: 1px solid #d8c9bd;
+}
+
+.artisan-bottom h2 {
+  color: #452f26;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 28px;
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  margin: 0 0 12px;
+}
+
+.artisan-bottom p {
+  color: #765f53;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+  .artisans-page {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .artisans-container {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+  }
+
+  .artisan-card {
+    max-width: 340px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+  .artisans-page {
+    padding: 120px 5% 50px;
+  }
+
+  .artisans-heading {
+    margin-bottom: 35px;
+  }
+
+  .artisans-heading h1 {
+    font-size: 35px;
+  }
+
+  .artisans-heading p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .artisans-intro {
+    margin-bottom: 40px;
+  }
+
+  .artisans-intro h2 {
+    font-size: 23px;
+  }
+
+  .artisans-intro p {
+    font-size: 14px;
+  }
+
+  .artisans-container {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .artisan-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .artisan-image {
+    height: 280px;
+  }
+
+  .artisan-information {
+    padding: 15px;
+  }
+
+  .artisan-information h3 {
+    font-size: 20px;
+  }
+
+  .artisan-bottom {
+    margin-top: 55px;
+    padding: 30px 15px;
+  }
+
+  .artisan-bottom h2 {
+    font-size: 23px;
+  }
+
+  .artisan-bottom p {
+    font-size: 14px;
+  }
+}

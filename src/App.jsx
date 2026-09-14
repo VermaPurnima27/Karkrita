@@ -13,6 +13,8 @@ import Wishlist from "./Component/Wishlist";
 import Category from "./Component/Category";
 import ProductDetails from './Component/ProductDetails';
 import BestSeller from "./Component/BestSeller";
+import NewArrival from "./Component/NewArrival";
+import Artisans from "./Component/Artisans";
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -60,6 +62,11 @@ export default function App() {
         <Route path="/search" element={<Search />} />
 
         <Route path="/best-sellers" element={<BestSeller  /> }/>
+
+        <Route path="/new-arrivals" element={<NewArrival />} />
+
+        <Route path="/artisans" element={<Artisans />} />
+
 
       </Routes>
 
