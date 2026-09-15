@@ -66,10 +66,7 @@ const Artisans = () => {
     }
   ];
 
-  const handleCollection = (artisan) => {
-    localStorage.setItem("selectedArtisan", JSON.stringify(artisan));
-    navigate("/categories");
-  };
+
 
   return (
     <div className="artisans-page">
@@ -136,12 +133,7 @@ const Artisans = () => {
                 {artisan.description}
               </p>
 
-              <button
-                className="artisan-btn"
-                onClick={() => handleCollection(artisan)}
-              >
-                View Collection
-              </button>
+          
 
             </div>
 

@@ -184,33 +184,6 @@
 }
 
 
-/* ================= BUTTON ================= */
-
-.artisan-btn {
-  width: 100%;
-
-  padding: 10px;
-
-  background-color: #a38567;
-
-  color: #ffffff;
-
-  border: none;
-
-  font-family: "Playfair Display", serif;
-
-  font-size: 15px;
-
-  cursor: pointer;
-
-  transition: background 0.3s ease;
-}
-
-.artisan-btn:hover {
-  background-color: #452f26;
-}
-
-
 /* ================= BOTTOM SECTION ================= */
 
 .artisan-bottom {
