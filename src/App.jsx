@@ -15,6 +15,7 @@ import ProductDetails from './Component/ProductDetails';
 import BestSeller from "./Component/BestSeller";
 import NewArrival from "./Component/NewArrival";
 import Artisans from "./Component/Artisans";
+import About from "./Component/About";
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -66,6 +67,8 @@ export default function App() {
         <Route path="/new-arrivals" element={<NewArrival />} />
 
         <Route path="/artisans" element={<Artisans />} />
+
+        <Route path="/about" element={<About />} />
 
 
       </Routes>
