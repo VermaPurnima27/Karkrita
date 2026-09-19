@@ -23,7 +23,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 export default function App() {
   return (
     <BrowserRouter>
-
+                 <Routes>
+                   <Route path="/about" element={<About />} /></Routes>
       {/* Navbar */}
       <Navbar />
 
@@ -68,7 +69,7 @@ export default function App() {
 
         <Route path="/artisans" element={<Artisans />} />
 
-        <Route path="/about" element={<About />} />
+        
 
 
       </Routes>

@@ -1,434 +1,259 @@
+
 import React from "react";
 import "./About.css";
 
-import pphoto from "./image/pphoto.jpeg";
+import karkritaImage from "./image/img40.jpg";
+import pphoto from "./image/pphoto.jpeg"
+import img35 from "./image/img35.jpg"
 
 const About = () => {
   return (
     <div className="about-page">
 
       {/* ================= HERO SECTION ================= */}
-
       <section className="about-hero">
 
-        <div className="about-hero-content">
+        {/* Top Heading */}
+        <div className="about-hero-heading">
+          <h1>WELCOME TO KARKRITA</h1>
 
-          <p className="about-label">WELCOME TO KARKRITA</p>
-
-          <h1>
-            Where Heritage
-            <br />
-            Finds a New Life
-          </h1>
-
-          <p className="about-hero-text">
-            A journey to celebrate India's traditional art, artisans,
-            craftsmanship and cultural heritage in a modern world.
-          </p>
-
+          <div className="star-line">
+            <span>✦</span>
+            <span>───</span>
+            <span>✦</span>
+            <span>───</span>
+            <span>✦</span>
+          </div>
         </div>
 
-      </section>
+        {/* Story + Image */}
+        <div className="about-story">
 
+          {/* Left Content */}
+          <div className="story-content">
+            <p className="small-heading">KARKRITA</p>
 
-      {/* ================= STORY BEHIND NAME ================= */}
+            <h2>Story Behind the Logo Name</h2>
 
-      <section className="name-story-section">
+            <div className="story-line"></div>
 
-        <div className="name-story-decoration">
-          <span>✦</span>
-          <span>✦</span>
-          <span>✦</span>
-        </div>
+            <p><b>"kar" means 'hath' and krita means 'krit' , 'karya' ya 'kaam' that both words define "hatho se kiya gya kaam ya kriti".</b></p>
+            <p>
+              Karkrita is a name inspired by the beauty of Indian craftsmanship,
+              culture, and creativity. It represents the hands, traditions,
+              and stories behind every handmade creation.
+            </p>
 
-        <div className="name-story-content">
+            <p>
+              The idea behind Karkrita is to bring traditional Indian art and
+              craftsmanship into a modern world, where culture meets style
+              and every product has a story to tell.
+            </p>
 
-          <p className="section-label">
-            THE STORY BEHIND THE NAME
-          </p>
+            <p className="quote">
+              “Old traditions, new trends — keeping our culture beautifully
+              alive.”
+            </p>
+          </div>
 
-          <h2>
-            Why <span>Karkrita?</span>
-          </h2>
-
-          <div className="name-line"></div>
-
-          <p>
-            The name <strong>Karkrita</strong> represents the spirit of
-            creation, craftsmanship and the skilled hands behind every
-            beautiful handmade creation.
-            Every handmade product has a story behind it. A story of an
-            artisan, a family, a village and a tradition passed down
-            through generations.
-            For us, Karkrita is not simply a brand name. It represents
-            <strong> creation, culture, craftsmanship and heritage.</strong>
-          </p>
-
-          <div className="name-highlight">
-            <span>Hands create.</span>
-            <span>Heritage speaks.</span>
-            <span>Stories live on.</span>
+          {/* Right Image */}
+          <div className="story-image">
+            <img src={karkritaImage} alt="Karkrita" />
           </div>
 
         </div>
 
       </section>
-
 
       {/* ================= FOUNDER SECTION ================= */}
+         <section className="founder-section">
 
-      <section className="founder-section">
+  {/* LEFT - FOUNDER IMAGE */}
+  <div className="founder-left">
 
-        <div className="founder-image-container">
+    <div className="founder-image-box">
+      <img src={pphoto} alt="Er. Purnima Verma" />
+    </div>
 
-          <div className="founder-image-frame">
+    <p className="founder-title">
+      Founder and Developer of Karkrita
+    </p>
 
-            <img
-              src={pphoto}
-              alt="Purnima Verma - Founder and Developer of Karkrita"
-            />
+    <h2 className="founder-name">
+      Er. Purnima Verma
+    </h2>
 
-          </div>
+  </div>
 
-          <div className="founder-badge">
-            FOUNDER
-            <br />
-            & DEVELOPER
-          </div>
 
-        </div>
+  {/* RIGHT - ABOUT ME */}
+  <div className="founder-content">
 
+    <p className="founder-small-heading">
+      ABOUT ME
+    </p>
 
-        <div className="founder-content">
+    <h2>
+      The Person Behind Karkrita
+    </h2>
 
-          <p className="section-label">
-            THE PERSON BEHIND KARKRITA
-          </p>
+    <div className="founder-line"></div>
 
-          <h2>
-            Meet the <span>Founder</span>
-          </h2>
+    <p>
+      Hi, I'm Purnima Verma, the founder and developer of Karkrita.
+      I am a Computer Science engineering student with a passion for
+      technology, creativity, and India's rich cultural heritage.
+    </p>
 
-          <h3>Purnima Verma</h3>
+    <p>
+      The idea behind Karkrita came from a simple thought — why should
+      the beautiful traditional art and craftsmanship of our villages
+      and small towns remain unseen by the modern world?
+    </p>
 
-          <p>
-            Hi, I'm <strong>Purnima Verma</strong>, the founder and
-            developer of Karkrita.
-          </p>
+    <p>
+      Through Karkrita, I want to bring technology and tradition
+      together by creating a platform where local artisans and their
+      beautiful handmade creations can reach a wider audience.
+    </p>
 
-          <p>
-            I am a Computer Science engineering student with an interest
-            in technology, creativity and India's rich cultural heritage.
-            The idea behind Karkrita started with a simple thought:
-          </p>
+    <p>
+      Karkrita is not just a website for me. It is an attempt to
+      celebrate our culture, support local craftsmanship, and give
+      traditional art a meaningful place in today's modern world.
+    </p>
 
-          <blockquote>
-            "Why should the beautiful traditional art of our villages
-            and small towns remain unseen by the modern world?"
-          </blockquote>
+  </div>
 
-          <p>
-            India is home to countless talented artisans who create
-            beautiful jewellery, sarees, pottery, metal crafts, wooden
-            art, bamboo products, paintings, décor, toys and many other
-            traditional creations.
-            I wanted to build a platform where these creations could
-            reach people beyond their local communities.
-          </p>
+</section>
 
-          <p>
-            Karkrita is my attempt to bring
-            <strong> technology and tradition together.</strong>
-          </p>
 
-          <div className="founder-signature">
-            — Purnima Verma
-          </div>
 
-        </div>
+{/* ================= KARKRITA SECTION ================= */}
 
-      </section>
+<section className="karkrita-section">
 
+  {/* LEFT CONTENT */}
+  <div className="karkrita-content">
 
-      {/* ================= STORY SECTION ================= */}
+    <p className="karkrita-small-heading">
+      OUR STORY
+    </p>
 
-      <section className="our-story-section">
+    <h2>
+      What is Karkrita?
+    </h2>
 
-        <div className="story-heading">
+    <div className="karkrita-line"></div>
 
-          <p className="section-label">
-            THE BEGINNING
-          </p>
+    <p>
+      Karkrita is a platform that brings together the beauty of
+      Indian traditional art and the talent of local artisans.
+      We want to make our beautiful culture easy to discover,
+      appreciate, and shop.
+    </p>
 
-          <h2>
-            The Story Behind <span>Karkrita</span>
-          </h2>
+    <p>
+      Here, you can find handmade and handcrafted products such as
+      pottery, Dhokra, jewellery, iron craft, home decor, sarees,
+      suits and more. Every product carries the beauty of our
+      traditions and the hard work of skilled artisans.
+    </p>
 
-        </div>
+    <p>
+      Our goal is simple — to give local artisans and their
+      beautiful crafts the recognition they deserve, while
+      making it easy for people to discover something unique,
+      meaningful, and full of culture.
+    </p>
 
 
-        <div className="story-grid">
+    {/* FEATURES */}
 
-          <div className="story-card">
+    <div className="karkrita-features">
 
-            <div className="story-number">01</div>
-
-            <h3>A Rich Heritage</h3>
-
-            <p>
-              India has a remarkable tradition of handmade art and
-              craftsmanship. From textiles and jewellery to pottery,
-              metalwork, wooden art, bamboo products and décor, every
-              region has something unique to offer.
-            </p>
-
-          </div>
-
-
-          <div className="story-card">
-
-            <div className="story-number">02</div>
-
-            <h3>A Changing World</h3>
-
-            <p>
-              Many traditional creations are becoming less visible in
-              modern life. At the same time, talented artisans in
-              villages and small towns often do not have access to a
-              wider digital marketplace.
-            </p>
-
-          </div>
-
-
-          <div className="story-card">
-
-            <div className="story-number">03</div>
-
-            <h3>A New Beginning</h3>
-
-            <p>
-              Karkrita was created to connect these traditional
-              creations and the people behind them with a wider
-              audience through technology.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= VISION SECTION ================= */}
-
-      <section className="vision-section">
-
-        <div className="vision-content">
-
-          <p className="section-label">
-            OUR VISION
-          </p>
-
-          <h2>
-            Bringing Tradition
-            <br />
-            <span>Into Tomorrow</span>
-          </h2>
-
-          <p>
-            We don't believe that tradition belongs only in the past.
-            We believe that traditional art can become part of the
-            future.
-          </p>
-
-          <p>
-            Our vision is to introduce India's cultural heritage to the
-            new generation in a way that feels beautiful, relevant and
-            inspiring.
-          </p>
-
-          <p>
-            We want people to discover the stories behind handmade
-            products and appreciate the skill, patience and knowledge
-            that goes into creating them.
-          </p>
-
-        </div>
-
-
-        <div className="vision-quote">
-
-          <div className="quote-symbol">“</div>
-
-          <h3>
-            Tradition does not have to stay in the past.
-          </h3>
-
-          <p>
-            It can become tomorrow's trend.
-          </p>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= MISSION SECTION ================= */}
-
-      <section className="mission-section">
-
-        <div className="mission-heading">
-
-          <p className="section-label">
-            OUR MISSION
-          </p>
-
-          <h2>
-            More Than a <span>Marketplace</span>
-          </h2>
-
-          <p>
-            Karkrita is an effort to bring artisans, culture and
-            technology together.
-          </p>
-
-        </div>
-
-
-        <div className="mission-grid">
-
-          <div className="mission-card">
-
-            <div className="mission-icon">✦</div>
-
-            <h3>Celebrate Artisans</h3>
-
-            <p>
-              Give skilled artisans a platform where their work and
-              stories can reach a wider audience.
-            </p>
-
-          </div>
-
-
-          <div className="mission-card">
-
-            <div className="mission-icon">◈</div>
-
-            <h3>Preserve Heritage</h3>
-
-            <p>
-              Help traditional art and craftsmanship remain visible
-              and connected with future generations.
-            </p>
-
-          </div>
-
-
-          <div className="mission-card">
-
-            <div className="mission-icon">✧</div>
-
-            <h3>Connect With the World</h3>
-
-            <p>
-              Create opportunities for Indian craftsmanship to be
-              discovered beyond villages, towns and communities.
-            </p>
-
-          </div>
-
-
-          <div className="mission-card">
-
-            <div className="mission-icon">◇</div>
-
-            <h3>Inspire the New Generation</h3>
-
-            <p>
-              Show that traditional does not mean outdated and that
-              heritage can have a place in modern lifestyles.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= DREAM SECTION ================= */}
-
-      <section className="dream-section">
-
-        <div className="dream-content">
-
-          <p className="section-label">
-            OUR DREAM
-          </p>
-
-          <h2>
-            From Indian Hands
-            <br />
-            <span>To the World</span>
-          </h2>
-
-          <p>
-            We dream of a future where a person anywhere in the world
-            can discover a beautiful handmade creation from a small
-            Indian village and know the story behind it.
-          </p>
-
-          <p>
-            A future where artisans can build their identity, where
-            traditional crafts receive appreciation and where India's
-            cultural richness continues to inspire the world.
-          </p>
-
-          <div className="dream-line">
-            <span>Discover</span>
-            <span>•</span>
-            <span>Support</span>
-            <span>•</span>
-            <span>Preserve</span>
-          </div>
-
-        </div>
-
-      </section>
-
-
-      {/* ================= FINAL SECTION ================= */}
-
-      <section className="about-final">
-
-        <p className="section-label">
-          FROM OUR HEART
-        </p>
-
-        <h2>
-          My Culture.
-          <br />
-          My People.
-          <br />
-          <span>Their Art.</span>
-        </h2>
-
+      <div className="karkrita-feature">
+        <div className="feature-icon">♡</div>
+        <h3>Support Local Artisans</h3>
         <p>
-          Karkrita is our small step towards giving India's traditional
-          craftsmanship a new direction and a new place in the modern
-          world.
+          Real people, real stories, real talent.
         </p>
+      </div>
 
-        <div className="final-tagline">
-          Karkrita — Where Heritage Finds a New Life.
-        </div>
 
-      </section>
+      <div className="karkrita-feature">
+        <div className="feature-icon">♢</div>
+        <h3>Authentic Handcrafted Products</h3>
+        <p>
+          Traditional crafts, made with love.
+        </p>
+      </div>
+
+
+      <div className="karkrita-feature">
+        <div className="feature-icon">✿</div>
+        <h3>Wide Range of Categories</h3>
+        <p>
+          Jewellery, decor, sarees, suits and more.
+        </p>
+      </div>
+
+
+      <div className="karkrita-feature">
+        <div className="feature-icon">✓</div>
+        <h3>Safe & Secure Shopping</h3>
+        <p>
+          Your trust means everything to us.
+        </p>
+      </div>
+
+
+      <div className="karkrita-feature">
+        <div className="feature-icon">♧</div>
+        <h3>Free Shipping</h3>
+        <p>
+          On orders above ₹2000.
+        </p>
+      </div>
+
+
+      <div className="karkrita-feature">
+        <div className="feature-icon">↻</div>
+        <h3>Easy Returns</h3>
+        <p>
+          Because your happiness matters.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  {/* RIGHT IMAGE */}
+
+  <div className="karkrita-image-wrapper">
+
+    <div className="karkrita-image-box">
+
+      <img src={img35}
+        alt="Indian Traditional Fashion"
+      />
+
+      <div className="tradition-text">
+        <span>Turn Your</span>
+        <strong>Tradition to <i>Trend</i></strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
     </div>
   );
 };
 
 export default About;
+
