@@ -42,9 +42,7 @@ const About = () => {
               Karkrita is a name inspired by the beauty of Indian craftsmanship,
               culture, and creativity. It represents the hands, traditions,
               and stories behind every handmade creation.
-            </p>
-
-            <p>
+            
               The idea behind Karkrita is to bring traditional Indian art and
               craftsmanship into a modern world, where culture meets style
               and every product has a story to tell.
@@ -54,6 +52,7 @@ const About = () => {
               “Old traditions, new trends — keeping our culture beautifully
               alive.”
             </p>
+            
           </div>
 
           {/* Right Image */}

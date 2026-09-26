@@ -16,6 +16,7 @@ import BestSeller from "./Component/BestSeller";
 import NewArrival from "./Component/NewArrival";
 import Artisans from "./Component/Artisans";
 import About from "./Component/About";
+import Contact from './Component/Contact';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -63,11 +64,17 @@ export default function App() {
         {/*search  Page */}
         <Route path="/search" element={<Search />} />
 
+        {/*best -seller page*/}
         <Route path="/best-sellers" element={<BestSeller  /> }/>
 
+         {/*new arrivals page*/}
         <Route path="/new-arrivals" element={<NewArrival />} />
 
+            {/**artisan  page*/}
         <Route path="/artisans" element={<Artisans />} />
+
+          {/**contac page */}
+        <Route path="/contact" element={<Contact />} />
 
         
 

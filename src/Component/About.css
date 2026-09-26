@@ -25,7 +25,7 @@
 .about-hero-heading h1 {
   margin: 20px 0 0;
   font-family: "Playfair Display", serif;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 500;
   letter-spacing: 4px;
   color: #614239;
@@ -43,6 +43,8 @@
   color: #57483f;
   letter-spacing: 2px;
 }
+
+
 
 
 /* ================= STORY SECTION ================= */
@@ -77,11 +79,11 @@
 
 .story-content h2 {
   font-family: "Playfair Display", serif;
-  font-size: 42px;
+  font-size: 39px;
   font-weight: 500;
   line-height: 1.2;
   margin: 0;
-  color: #452f26;
+  color: #9d624a;
 }
 
 .story-line {
@@ -93,7 +95,7 @@
 
 .story-content p {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.9;
   color: #5d4b42;
   margin-bottom: 20px;
@@ -324,12 +326,12 @@
   margin: 0;
 
   font-family: "Playfair Display", serif;
-  font-size: 42px;
+  font-size: 39px;
   font-weight: 500;
 
   line-height: 1.2;
 
-  color: #452f26;
+  color: #8b604f;
 }
 
 
@@ -347,7 +349,7 @@
   margin-bottom: 20px;
 
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
 
   line-height: 1.9;
 

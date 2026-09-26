@@ -1,0 +1,778 @@
+/* =====================================================
+   KARKRITA CONTACT PAGE
+   ALL CLASSES ARE UNIQUE TO AVOID CSS CONFLICTS
+===================================================== */
+
+.karkrita-contact-page {
+  background: #f5f1ea;
+  color: #452f26;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.karkrita-contact-hero {
+  min-height: 520px;
+  background: #452f26;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 150px 20px 90px;
+
+  position: relative;
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* LEFT CIRCLE */
+
+.karkrita-contact-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  border: 1px solid rgba(245, 241, 234, 0.15);
+
+  border-radius: 50%;
+
+  left: -120px;
+  top: 50px;
+
+  pointer-events: none;
+}
+
+
+/* RIGHT CIRCLE */
+
+.karkrita-contact-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  border: 1px solid rgba(245, 241, 234, 0.12);
+
+  border-radius: 50%;
+
+  right: -180px;
+  bottom: -200px;
+
+  pointer-events: none;
+}
+
+
+.karkrita-contact-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 900px;
+}
+
+
+.karkrita-contact-small-title {
+  font-size: 13px;
+
+  letter-spacing: 4px;
+
+  color: #d7b99b;
+
+  margin: 0 0 20px;
+}
+
+
+.karkrita-contact-hero h1 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 64px;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+
+  color: #f5f1ea;
+
+  margin: 0;
+}
+
+
+.karkrita-contact-stars {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin: 22px 0;
+
+  color: #d7b99b;
+
+  font-size: 18px;
+}
+
+
+.karkrita-contact-hero-text {
+  color: #e4d9cf;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  margin: 0;
+}
+
+
+/* =====================================================
+   INTRO SECTION
+===================================================== */
+
+.karkrita-contact-intro {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  padding: 100px 9%;
+
+  max-width: 1400px;
+
+  margin: auto;
+
+  box-sizing: border-box;
+}
+
+
+.karkrita-contact-intro-left {
+  min-width: 0;
+}
+
+
+.karkrita-section-label {
+  font-size: 12px;
+
+  letter-spacing: 3px;
+
+  color: #8c6855;
+
+  font-weight: 600;
+
+  margin: 0 0 18px;
+}
+
+
+.karkrita-contact-intro-left h2,
+.karkrita-form-heading h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 48px;
+
+  line-height: 1.15;
+
+  font-weight: 500;
+
+  margin: 0 0 25px;
+
+  color: #452f26;
+}
+
+
+.karkrita-intro-text {
+  color: #705b50;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  max-width: 550px;
+
+  margin: 0 0 15px;
+}
+
+
+/* SMALL LINE */
+
+.karkrita-intro-line {
+  width: 80px;
+
+  height: 2px;
+
+  background: #452f26;
+
+  margin: 30px 0 18px;
+}
+
+
+/*
+   IMPORTANT:
+   This is now a UNIQUE class.
+   It cannot conflict with About.css.
+*/
+
+.karkrita-tradition-text {
+  font-family: "Playfair Display", serif;
+
+  font-style: italic;
+
+  font-size: 22px;
+
+  color: #8c6855;
+
+  margin: 0;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  box-shadow: none;
+
+  position: static;
+
+  width: auto;
+
+  height: auto;
+
+  display: block;
+}
+
+
+/* =====================================================
+   CONTACT INFO
+===================================================== */
+
+.karkrita-contact-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+
+  justify-content: center;
+}
+
+
+.karkrita-contact-info-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 22px;
+
+  padding: 25px;
+
+  background: #fffdf9;
+
+  border: 1px solid #e6ddd3;
+
+  box-sizing: border-box;
+
+  transition: all 0.3s ease;
+}
+
+
+.karkrita-contact-info-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 30px rgba(69, 47, 38, 0.08);
+}
+
+
+.karkrita-contact-icon {
+  width: 55px;
+
+  height: 55px;
+
+  min-width: 55px;
+
+  border-radius: 50%;
+
+  background: #452f26;
+
+  color: #f5f1ea;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 18px;
+}
+
+
+.karkrita-contact-info-card h3 {
+  margin: 0 0 5px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 20px;
+
+  color: #452f26;
+}
+
+
+.karkrita-contact-info-card p {
+  margin: 0 0 4px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #452f26;
+}
+
+
+.karkrita-contact-info-card span {
+  color: #8a766b;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   FORM SECTION
+===================================================== */
+
+.karkrita-contact-form-section {
+  background: #fffdf9;
+
+  padding: 100px 9%;
+
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 100px;
+
+  border-top: 1px solid #e8dfd5;
+
+  box-sizing: border-box;
+}
+
+
+.karkrita-form-heading {
+  min-width: 0;
+}
+
+
+.karkrita-form-description {
+  color: #806c61;
+
+  line-height: 1.8;
+
+  max-width: 400px;
+
+  font-size: 15px;
+
+  margin: 0;
+}
+
+
+.karkrita-contact-form {
+  width: 100%;
+
+  min-width: 0;
+}
+
+
+.karkrita-form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+}
+
+
+.karkrita-form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 25px;
+
+  min-width: 0;
+}
+
+
+.karkrita-form-group label {
+  font-size: 13px;
+
+  font-weight: 600;
+
+  margin-bottom: 9px;
+
+  color: #452f26;
+}
+
+
+.karkrita-form-group input,
+.karkrita-form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d9cec4;
+
+  background: #f9f6f1;
+
+  padding: 15px 16px;
+
+  font-size: 14px;
+
+  color: #452f26;
+
+  outline: none;
+
+  font-family: Arial, sans-serif;
+
+  transition: 0.3s ease;
+}
+
+
+.karkrita-form-group input {
+  height: 52px;
+}
+
+
+.karkrita-form-group textarea {
+  resize: vertical;
+
+  min-height: 150px;
+}
+
+
+.karkrita-form-group input:focus,
+.karkrita-form-group textarea:focus {
+  border-color: #452f26;
+
+  background: #ffffff;
+}
+
+
+.karkrita-form-group input::placeholder,
+.karkrita-form-group textarea::placeholder {
+  color: #aa9b91;
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.karkrita-contact-submit {
+  border: none;
+
+  background: #452f26;
+
+  color: #ffffff;
+
+  padding: 16px 30px;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+
+  transition: all 0.3s ease;
+}
+
+
+.karkrita-contact-submit span {
+  font-size: 20px;
+
+  transition: transform 0.3s ease;
+}
+
+
+.karkrita-contact-submit:hover {
+  background: #63463a;
+}
+
+
+.karkrita-contact-submit:hover span {
+  transform: translateX(6px);
+}
+
+
+/* =====================================================
+   SOCIAL SECTION
+===================================================== */
+
+.karkrita-contact-social {
+  text-align: center;
+
+  padding: 90px 20px;
+
+  background: #f5f1ea;
+
+  box-sizing: border-box;
+}
+
+
+.karkrita-contact-social h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 42px;
+
+  font-weight: 500;
+
+  margin: 0 0 15px;
+
+  color: #452f26;
+}
+
+
+.karkrita-social-description {
+  color: #806c61;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  max-width: 550px;
+
+  margin: 0 auto;
+}
+
+
+.karkrita-social-icons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 30px;
+}
+
+
+.karkrita-social-icons a {
+  width: 48px;
+
+  height: 48px;
+
+  border-radius: 50%;
+
+  background: #452f26;
+
+  color: #f5f1ea;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+
+.karkrita-social-icons a:hover {
+  transform: translateY(-5px);
+
+  background: #63463a;
+}
+
+
+/* =====================================================
+   BOTTOM QUOTE
+===================================================== */
+
+.karkrita-contact-quote {
+  min-height: 380px;
+
+  background: #452f26;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  color: #f5f1ea;
+
+  padding: 60px 20px;
+
+  box-sizing: border-box;
+}
+
+
+.karkrita-contact-quote span {
+  color: #d7b99b;
+
+  font-size: 22px;
+}
+
+
+.karkrita-contact-quote h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 48px;
+
+  line-height: 1.25;
+
+  font-weight: 400;
+
+  margin: 15px 0 20px;
+}
+
+
+.karkrita-contact-quote p {
+  letter-spacing: 5px;
+
+  font-size: 12px;
+
+  color: #d7b99b;
+
+  margin: 0;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .karkrita-contact-hero {
+    min-height: 420px;
+  }
+
+
+  .karkrita-contact-hero h1 {
+    font-size: 48px;
+  }
+
+
+  .karkrita-contact-intro {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+    padding: 75px 7%;
+  }
+
+
+  .karkrita-contact-form-section {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+
+    padding: 75px 7%;
+  }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .karkrita-contact-hero {
+    min-height: 380px;
+
+    padding: 100px 20px 60px;
+  }
+
+
+  .karkrita-contact-hero h1 {
+    font-size: 38px;
+  }
+
+
+  .karkrita-contact-hero-text {
+    font-size: 14px;
+  }
+
+
+  .karkrita-contact-intro-left h2,
+  .karkrita-form-heading h2 {
+    font-size: 38px;
+  }
+
+
+  .karkrita-contact-intro {
+    padding: 60px 6%;
+  }
+
+
+  .karkrita-contact-info-card {
+    padding: 20px;
+  }
+
+
+  .karkrita-contact-icon {
+    width: 48px;
+
+    height: 48px;
+
+    min-width: 48px;
+  }
+
+
+  .karkrita-contact-form-section {
+    padding: 60px 6%;
+  }
+
+
+  .karkrita-form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+
+  .karkrita-contact-social {
+    padding: 70px 20px;
+  }
+
+
+  .karkrita-contact-social h2 {
+    font-size: 34px;
+  }
+
+
+  .karkrita-contact-quote {
+    min-height: 320px;
+  }
+
+
+  .karkrita-contact-quote h2 {
+    font-size: 38px;
+  }
+
+}
