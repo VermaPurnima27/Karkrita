@@ -19,10 +19,7 @@ export default function Account() {
     const navigate = useNavigate();
 
 
-    // =========================
-    // GET LOGGED-IN USER
-    // =========================
-
+    // 
     useEffect(() => {
 
         const getUserProfile = async () => {
