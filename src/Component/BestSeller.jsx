@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./BestSeller.css";
 
 // Images
@@ -8,7 +9,20 @@ import img15 from "./image/img15.jpg";
 import img12 from "./image/img12.jpg";
 
 
-function BestSeller({ handleShopNow }) {
+
+
+  function BestSeller() {
+
+  const navigate = useNavigate();
+
+  const handleShopNow = (product) => {
+    localStorage.setItem(
+      "selectedProduct",
+      JSON.stringify(product)
+    );
+
+    navigate("/product");
+  };
 
   return (
     <div className="best-seller-page">

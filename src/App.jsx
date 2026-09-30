@@ -53,7 +53,7 @@ export default function App() {
         {/*wishlist  Page */}
         <Route path="/wishlist" element={<Wishlist />} />
 
-        <Route  path="/product" element={<ProductDetails />} />
+        <Route  path="/Product" element={<ProductDetails />} />
 
         {/*signup  Page */}
         <Route path="/signup" element={<Signup />} />

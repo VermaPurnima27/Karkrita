@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Category.css";
 
 import bamboo_lamp from "./image/bamboo_lamp.jpg";
@@ -14,6 +15,16 @@ import deer_wall_decor from "./image/bamboo_lamp.jpg";
 
 function Category() {
 
+  const navigate = useNavigate();
+
+  const handleShopNow = (product) => {
+    localStorage.setItem(
+      "selectedProduct",
+      JSON.stringify(product)
+    );
+
+    navigate("/product");
+  };
   // ================= JEWELLERY =================
 
   const jewelleryProducts = [
@@ -262,10 +273,12 @@ function Category() {
                   {product.price} Rs.
                 </p>
 
-                <button className="shop-btn">
+                <button
+                  className="shop-btn"
+                  onClick={() => handleShopNow(product)}
+                >
                   Shop Now
                 </button>
-
               </div>
 
             </div>
