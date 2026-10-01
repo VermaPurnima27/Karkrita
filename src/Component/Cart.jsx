@@ -1,57 +1,221 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Cart.css";
 
 const Cart = () => {
 
-    const [cartItems, setCartItems] = useState([
-        {
-            id: 1,
-            name: "Traditional Brass Camel",
-            price: 1299,
-            quantity: 1,
-            image: "/images/camel.jpg"
-        },
-        {
-            id: 2,
-            name: "Handmade Brass Bowl",
-            price: 899,
-            quantity: 1,
-            image: "/images/bowl.jpg"
+    const [cartItems, setCartItems] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    // ================= GET CART =================
+
+    const fetchCart = async () => {
+
+        const token = localStorage.getItem("token");
+
+        if (!token) {
+            setCartItems([]);
+            setLoading(false);
+            return;
         }
-    ]);
 
-    // Increase quantity
-    const increaseQty = (id) => {
-        setCartItems(
-            cartItems.map(item =>
-                item.id === id
-                    ? { ...item, quantity: item.quantity + 1 }
-                    : item
-            )
-        );
+        try {
+
+            const response = await fetch(
+                "http://localhost:5000/api/cart",
+                {
+                    method: "GET",
+                    headers: {
+                        "Authorization": `Bearer ${token}`
+                    }
+                }
+            );
+
+            const data = await response.json();
+
+            if (response.ok) {
+
+                setCartItems(data.cart.items || []);
+
+            } else {
+
+                console.log(data.message);
+
+            }
+
+        } catch (error) {
+
+            console.error("Fetch Cart Error:", error);
+
+        } finally {
+
+            setLoading(false);
+
+        }
     };
 
-    // Decrease quantity
-    const decreaseQty = (id) => {
-        setCartItems(
-            cartItems.map(item =>
-                item.id === id && item.quantity > 1
-                    ? { ...item, quantity: item.quantity - 1 }
-                    : item
-            )
-        );
+
+    // Cart load hote hi API call
+    useEffect(() => {
+        fetchCart();
+    }, []);
+
+
+    // ================= INCREASE QUANTITY =================
+
+    const increaseQty = async (productId, currentQuantity) => {
+
+        const token = localStorage.getItem("token");
+
+        try {
+
+            const response = await fetch(
+                `http://localhost:5000/api/cart/${productId}`,
+                {
+                    method: "PUT",
+
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${token}`
+                    },
+
+                    body: JSON.stringify({
+                        quantity: currentQuantity + 1
+                    })
+                }
+            );
+
+            const data = await response.json();
+
+            if (response.ok) {
+
+                fetchCart();
+
+            } else {
+
+                alert(data.message);
+
+            }
+
+        } catch (error) {
+
+            console.error("Increase Quantity Error:", error);
+
+        }
     };
 
-    // Remove product
-    const removeItem = (id) => {
-        setCartItems(
-            cartItems.filter(item => item.id !== id)
-        );
+
+    // ================= DECREASE QUANTITY =================
+
+    const decreaseQty = async (productId, currentQuantity) => {
+
+        if (currentQuantity <= 1) {
+            return;
+        }
+
+        const token = localStorage.getItem("token");
+
+        try {
+
+            const response = await fetch(
+                `http://localhost:5000/api/cart/${productId}`,
+                {
+                    method: "PUT",
+
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Authorization": `Bearer ${token}`
+                    },
+
+                    body: JSON.stringify({
+                        quantity: currentQuantity - 1
+                    })
+                }
+            );
+
+            const data = await response.json();
+
+            if (response.ok) {
+
+                fetchCart();
+
+            } else {
+
+                alert(data.message);
+
+            }
+
+        } catch (error) {
+
+            console.error("Decrease Quantity Error:", error);
+
+        }
     };
 
-    // Calculate subtotal
+
+    // ================= REMOVE PRODUCT =================
+
+    const removeItem = async (productId) => {
+
+        const token = localStorage.getItem("token");
+
+        try {
+
+            const response = await fetch(
+                `http://localhost:5000/api/cart/${productId}`,
+                {
+                    method: "DELETE",
+
+                    headers: {
+                        "Authorization": `Bearer ${token}`
+                    }
+                }
+            );
+
+            const data = await response.json();
+
+            if (response.ok) {
+
+                fetchCart();
+
+            } else {
+
+                alert(data.message);
+
+            }
+
+        } catch (error) {
+
+            console.error("Remove Cart Error:", error);
+
+        }
+    };
+
+
+    // ================= LOADING =================
+
+    if (loading) {
+
+        return (
+            <div className="cart-page">
+
+                <div className="empty-cart">
+
+                    <h2>Loading cart...</h2>
+
+                </div>
+
+            </div>
+        );
+
+    }
+
+
+    // ================= CALCULATE TOTAL =================
+
     const subtotal = cartItems.reduce(
-        (total, item) => total + item.price * item.quantity,
+        (total, item) =>
+            total +
+            item.product.price * item.quantity,
         0
     );
 
@@ -61,21 +225,32 @@ const Cart = () => {
 
 
     return (
+
         <div className="cart-page">
 
             {/* ================= HEADER ================= */}
 
             <div className="cart-top">
+
                 <div>
+
                     <h1>Your Shopping Cart</h1>
+
                     <p>
                         {cartItems.length} items in your cart
                     </p>
+
                 </div>
 
+
                 <div className="continue-shopping">
-                    <a href="/">← Continue Shopping</a>
+
+                    <a href="/">
+                        ← Continue Shopping
+                    </a>
+
                 </div>
+
             </div>
 
 
@@ -90,28 +265,51 @@ const Cart = () => {
                     {cartItems.length === 0 ? (
 
                         <div className="empty-cart">
-                            <div className="empty-icon">🛒</div>
 
-                            <h2>Your cart is empty</h2>
+                            <div className="empty-icon">
+                                🛒
+                            </div>
+
+                            <h2>
+                                Your cart is empty
+                            </h2>
 
                             <p>
                                 Looks like you haven't added anything
                                 to your cart yet.
                             </p>
 
-                            <a href="/" className="shop-btn1">
+                            <a
+                                href="/"
+                                className="shop-btn1"
+                            >
                                 Start Shopping
                             </a>
+
                         </div>
 
                     ) : (
 
                         <>
+
                             <div className="cart-heading">
-                                <span>Product</span>
-                                <span>Price</span>
-                                <span>Quantity</span>
-                                <span>Total</span>
+
+                                <span>
+                                    Product
+                                </span>
+
+                                <span>
+                                    Price
+                                </span>
+
+                                <span>
+                                    Quantity
+                                </span>
+
+                                <span>
+                                    Total
+                                </span>
+
                             </div>
 
 
@@ -119,7 +317,7 @@ const Cart = () => {
 
                                 <div
                                     className="cart-item"
-                                    key={item.id}
+                                    key={item.product._id}
                                 >
 
                                     {/* PRODUCT */}
@@ -127,12 +325,15 @@ const Cart = () => {
                                     <div className="product-info">
 
                                         <img
-                                            src={item.image}
-                                            alt={item.name}
+                                            src={item.product.image}
+                                            alt={item.product.name}
                                         />
 
                                         <div>
-                                            <h3>{item.name}</h3>
+
+                                            <h3>
+                                                {item.product.name}
+                                            </h3>
 
                                             <p>
                                                 Handmade •
@@ -142,11 +343,14 @@ const Cart = () => {
                                             <button
                                                 className="remove-btn"
                                                 onClick={() =>
-                                                    removeItem(item.id)
+                                                    removeItem(
+                                                        item.product._id
+                                                    )
                                                 }
                                             >
                                                 Remove
                                             </button>
+
                                         </div>
 
                                     </div>
@@ -155,7 +359,9 @@ const Cart = () => {
                                     {/* PRICE */}
 
                                     <div className="product-price">
-                                        ₹{item.price}
+
+                                        ₹{item.product.price}
+
                                     </div>
 
 
@@ -165,7 +371,10 @@ const Cart = () => {
 
                                         <button
                                             onClick={() =>
-                                                decreaseQty(item.id)
+                                                decreaseQty(
+                                                    item.product._id,
+                                                    item.quantity
+                                                )
                                             }
                                         >
                                             −
@@ -177,7 +386,10 @@ const Cart = () => {
 
                                         <button
                                             onClick={() =>
-                                                increaseQty(item.id)
+                                                increaseQty(
+                                                    item.product._id,
+                                                    item.quantity
+                                                )
                                             }
                                         >
                                             +
@@ -192,7 +404,7 @@ const Cart = () => {
 
                                         ₹
                                         {(
-                                            item.price *
+                                            item.product.price *
                                             item.quantity
                                         ).toLocaleString("en-IN")}
 
@@ -201,7 +413,9 @@ const Cart = () => {
                                 </div>
 
                             ))}
+
                         </>
+
                     )}
 
                 </div>
@@ -213,32 +427,45 @@ const Cart = () => {
 
                     <div className="order-summary">
 
-                        <h2>Order Summary</h2>
+                        <h2>
+                            Order Summary
+                        </h2>
+
 
                         <div className="summary-row">
-                            <span>Subtotal</span>
+
+                            <span>
+                                Subtotal
+                            </span>
 
                             <span>
                                 ₹{subtotal.toLocaleString("en-IN")}
                             </span>
+
                         </div>
 
 
                         <div className="summary-row">
-                            <span>Delivery</span>
+
+                            <span>
+                                Delivery
+                            </span>
 
                             <span>
                                 {delivery === 0
                                     ? "FREE"
                                     : `₹${delivery}`}
                             </span>
+
                         </div>
 
 
                         <div className="free-delivery">
+
                             {delivery === 0
                                 ? "✓ You got free delivery!"
                                 : "Free delivery on orders above ₹2,000"}
+
                         </div>
 
 
@@ -247,7 +474,9 @@ const Cart = () => {
 
                         <div className="summary-total">
 
-                            <span>Total</span>
+                            <span>
+                                Total
+                            </span>
 
                             <strong>
                                 ₹{total.toLocaleString("en-IN")}
@@ -257,12 +486,16 @@ const Cart = () => {
 
 
                         <button className="checkout-btn">
+
                             Proceed to Checkout
+
                         </button>
 
 
                         <div className="secure-payment">
+
                             🔒 Secure & Safe Checkout
+
                         </div>
 
                     </div>
@@ -277,34 +510,65 @@ const Cart = () => {
             <div className="cart-benefits">
 
                 <div>
+
                     <span>🚚</span>
+
                     <div>
-                        <h4>Free Shipping</h4>
-                        <p>On orders above ₹2,000</p>
+
+                        <h4>
+                            Free Shipping
+                        </h4>
+
+                        <p>
+                            On orders above ₹2,000
+                        </p>
+
                     </div>
+
                 </div>
 
 
                 <div>
+
                     <span>↩</span>
+
                     <div>
-                        <h4>Easy Returns</h4>
-                        <p>30 days return policy</p>
+
+                        <h4>
+                            Easy Returns
+                        </h4>
+
+                        <p>
+                            30 days return policy
+                        </p>
+
                     </div>
+
                 </div>
 
 
                 <div>
+
                     <span>🔒</span>
+
                     <div>
-                        <h4>Secure Payment</h4>
-                        <p>100% secure payment</p>
+
+                        <h4>
+                            Secure Payment
+                        </h4>
+
+                        <p>
+                            100% secure payment
+                        </p>
+
                     </div>
+
                 </div>
 
             </div>
 
         </div>
+
     );
 };
 

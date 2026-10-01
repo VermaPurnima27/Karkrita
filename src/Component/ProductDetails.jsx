@@ -28,47 +28,75 @@ function ProductDetails() {
   };
 
   const decreaseQuantity = () => {
-
     if (quantity > 1) {
       setQuantity(quantity - 1);
     }
-
   };
 
-  const addToCart = () => {
+  // ================= ADD TO CART =================
 
-    let cart =
-      JSON.parse(localStorage.getItem("cart")) || [];
+  const addToCart = async () => {
 
-    const existingProduct = cart.find(
-      item => item.name === product.name
-    );
+    const token = localStorage.getItem("token");
 
-    if (existingProduct) {
-
-      existingProduct.quantity += quantity;
-
-    } else {
-
-      cart.push({
-        ...product,
-        quantity: quantity
-      });
-
+    // User login nahi hai
+    if (!token) {
+      alert("Please signin first!");
+      navigate("/signin");
+      return;
     }
 
-    localStorage.setItem(
-      "cart",
-      JSON.stringify(cart)
-    );
+    // Product ka MongoDB ID nahi hai
+    if (!product._id) {
+      alert("This product is not connected to the backend yet.");
+      return;
+    }
 
-    alert("Product added to cart!");
+    try {
 
+      const response = await fetch(
+        "http://localhost:5000/api/cart",
+        {
+          method: "POST",
+
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`
+          },
+
+          body: JSON.stringify({
+            productId: product._id,
+            quantity: quantity
+          })
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+
+        alert("Product added to cart!");
+
+      } else {
+
+        alert(data.message || "Failed to add product to cart");
+
+      }
+
+    } catch (error) {
+
+      console.error("Add to Cart Error:", error);
+
+      alert("Server error. Please try again.");
+
+    }
   };
 
-  const buyNow = () => {
+  // ================= BUY NOW =================
 
-    addToCart();
+  const buyNow = async () => {
+
+    await addToCart();
 
     navigate("/cart");
 
@@ -103,7 +131,7 @@ function ProductDetails() {
         </h1>
 
         <h2>
-          ${product.price}
+          ₹{product.price}
         </h2>
 
         <p className="details-description">
