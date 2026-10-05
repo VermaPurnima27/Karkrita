@@ -1,6 +1,6 @@
 
 
-import React from 'react'
+import React, { useEffect, useState } from "react";
 // import { FaHeart } from "react-icons/fa";
 import './Home.css'
 import bastarart2 from './image/bastarart2.webp';
@@ -49,49 +49,34 @@ import { Link, useNavigate } from 'react-router-dom';
 export default function Home() {
 
    const navigate = useNavigate();
+   const [products, setProducts] = useState([]);
+const [loading, setLoading] = useState(true);
+
+useEffect(() => {
+  const fetchProducts = async () => {
+    try {
+      const response = await fetch(
+        "http://localhost:5000/api/products"
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setProducts(data.products || []);
+      } else {
+        console.error(data.message);
+      }
+    } catch (error) {
+      console.error("Fetch Products Error:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchProducts();
+}, []);
 
   const handleShopNow = (product) => {
-
-    // ================= WISHLIST =================
-
-// const [wishlist, setWishlist] = useState(() => {
-//   try {
-//     return JSON.parse(localStorage.getItem("wishlist")) || [];
-//   } catch (error) {
-//     return [];
-//   }
-// });
-
-// const handleWishlist = (product) => {
-
-//   const alreadyExists = wishlist.some(
-//     (item) => item.id === product.id
-//   );
-
-//   let updatedWishlist;
-
-//   if (alreadyExists) {
-
-//     // Remove from wishlist
-//     updatedWishlist = wishlist.filter(
-//       (item) => item.id !== product.id
-//     );
-
-//   } else {
-
-//     // Add to wishlist
-//     updatedWishlist = [...wishlist, product];
-
-//   }
-
-//   setWishlist(updatedWishlist);
-
-//   localStorage.setItem(
-//     "wishlist",
-//     JSON.stringify(updatedWishlist)
-//   );
-// };
-
     localStorage.setItem(
       "selectedProduct",
       JSON.stringify(product)
@@ -172,212 +157,98 @@ export default function Home() {
 </section>
 
 
-
-
-
-
-
-
-
-
 {/*-------------------------- section one ----------------------*/}
 <div className="section-heading">
   <h2>Home Decor Collection</h2>
 </div>
+
 <div className="products-con">
-  {/* <!-- Product Box 1 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={bamboo_lamp} alt="bamboo lamp"/>
-      {/* <button
-    className="wishlist-btn"
-    onClick={() =>
-      handleWishlist({
-        id: "home-bamboo-lamp",
-        name: "Bamboo Lamp",
-        price: 400,
-        image: bamboo_lamp,
-        category: "Home Decor",
-        description: "Beautiful handmade traditional home decor product."
-      })
-    }
-  >
-    <FaHeart
-      className={
-        wishlist.some(
-          (item) => item.id === "home-bamboo-lamp"
-        )
-          ? "heart-filled"
-          : "heart-empty"
-      }
-    />
-  </button> */}
 
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Bamboo Lamp</h3>
-      <p className="product-prize">400 Rs.</p>
-      <button className="shop-btn"  onClick={() =>
-    handleShopNow({
-      name: "bamboo mlamp",
-      price: 400,
-      image: bamboo_lamp,
-      category: "Home Decor",
-      description: "Beautiful handmade traditional home decor product."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+  {products
+    .filter((product) => product.category === "Home Decor")
+    .slice(0, 4)
+    .map((product) => (
+      <div className="product-card" key={product._id}>
 
-  {/* <!-- Product Box 2 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={img2} alt="wall hanging"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Wall Hanging</h3>
-      <p className="product-prize">210 Rs.</p>
-      <button className="shop-btn" onClick={() =>
-    handleShopNow({
-      name: "Wall Hanging",
-      price: 120,
-      image: img2,
-      category: "Home Decor",
-      description: "Beautiful traditional handmade wall decoration."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+        <div className="product-image">
+          <img
+            src={product.image}
+            alt={product.name}
+          />
+        </div>
 
-  {/* <!-- Product Box 3 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={img15} alt="jaipuri wall art"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Jaipuri Wall Art</h3>
-      <p className="product-prize">199 Rs.</p>
-      <button className="shop-btn"  onClick={() =>
-    handleShopNow({
-      name: "Jaipuri Wall Art",
-      price: 199,
-      image: img15,
-      category: "Home Decor",
-      description: "Traditional Jaipuri handmade wall art."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+        <div className="product-information">
 
-  {/* <!-- Product Box 4 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={img12} alt="Deer Wall Decor"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Deer Wall Decor</h3>
-      <p className="product-prize">899 Rs.</p>
-      <button className="shop-btn" onClick={() =>
-    handleShopNow({
-      name: "Deer Wall Decor",
-      price: 899,
-      image: img12,
-      category: "Home Decor",
-      description: "Elegant handmade deer wall decoration."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+          <h3 className="product-title">
+            {product.name}
+          </h3>
+
+          <p className="product-prize">
+            {product.price} Rs.
+          </p>
+
+          <button
+            className="shop-btn"
+            onClick={() => handleShopNow(product)}
+          >
+            Shop Now
+          </button>
+
+        </div>
+
+      </div>
+    ))}
+
 </div>
 
 
-{/*-------------------------- section two ----------------------*/}
+
+
+
+
+
+{/*-------------------------- Shop by Craft ----------------------*/}
+
 <div className="section-heading">
   <h2>Shop by Craft</h2>
 </div>
+
 <div className="products-con">
-  {/* <!-- Product Box 1 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={img14} alt="Desk Items"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Desk Items</h3>
-      <p className="product-prize">460 Rs.</p>
-      <button className="shop-btn"  onClick={() =>
-    handleShopNow({
-      name: "Desk Items",
-      price:460 ,
-      image: img14,
-      category: "Craft",
-      description: "Beautiful handmade desk decoration."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+  {products
+    .filter((product) => product.category === "Shop by Craft")
+    .slice(0, 4)
+    .map((product) => (
+      <div className="product-card" key={product._id}>
 
-{/* <!-- Product Box 2 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={deer} alt="Candle Stand"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Candle Stand</h3>
-      <p className="product-prize">120.00 Rs.</p>
-      <button className="shop-btn" 
-  onClick={() =>
-    handleShopNow({
-      name: "Candle Stand",
-      price: 120,
-      image: deer,
-      category: "Craft",
-      description: "Handcrafted decorative candle stand."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+        <div className="product-image">
+          <img src={product.image} alt={product.name} />
+        </div>
 
-  {/* <!-- Product Box 3 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={bastar} alt="Bastar art"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Bastar art</h3>
-      <p className="product-prize">920.00 Rs.</p>
-      <button className="shop-btn"onClick={() =>
-    handleShopNow({
-      name: "Bastar Art",
-      price: 920,
-      image: bastar,
-      category: "Craft",
-      description: "Authentic traditional Bastar artwork."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+        <div className="product-information">
+          <h3 className="product-title">
+            {product.name}
+          </h3>
 
-  {/* <!-- Product Box 4 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={rajsthani} alt="Rajisthani Idol"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Rajisthani Idol</h3>
-      <p className="product-prize">98 Rs.</p>
-      <button className="shop-btn" onClick={() =>
-    handleShopNow({
-      name: "Rajasthani Idol",
-      price: 98,
-      image: rajsthani,
-      category: "Craft",
-      description: "Traditional handcrafted Rajasthani idol."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+          <p className="product-prize">
+            {product.price} Rs.
+          </p>
+
+          <button
+            className="shop-btn"
+            onClick={() => handleShopNow(product)}
+          >
+            Shop Now
+          </button>
+        </div>
+
+      </div>
+    ))}
 </div>
-    
+
+
+
+
+  
     
     {/*-------------------------- section three ----------------------*/}
 <div className="section-heading">
