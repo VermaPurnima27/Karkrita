@@ -215,7 +215,7 @@ useEffect(() => {
 
 <div className="products-con">
   {products
-    .filter((product) => product.category === "Shop by Craft")
+    .filter((product) => product.category === "Craft")
     .slice(0, 4)
     .map((product) => (
       <div className="product-card" key={product._id}>
