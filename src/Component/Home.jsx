@@ -251,90 +251,43 @@ useEffect(() => {
   
     
     {/*-------------------------- section three ----------------------*/}
+
+      {/*-------------------------- Kitchen & Dining ----------------------*/}
+
 <div className="section-heading">
   <h2>Kitchen & Dining</h2>
 </div>
+
 <div className="products-con">
-  {/* <!-- Product Box 1 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={img16} alt="Tortoise Saunf Supari set"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Tortoise Saunf Supari set</h3>
-      <p className="product-prize">640.00 Rs</p>
-      <button className="shop-btn"  onClick={() =>
-    handleShopNow({
-      name: "Tortoise Saunf Supari set",
-      price: 640,
-      image: "Tortoise Saunf Supari set",
-      category: "Kitchen & Dining",
-      description: "Beautiful handmade traditional Tortoise Saunf Supari set."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+  {products
+    .filter((product) => product.category === "Kitchen & Dining")
+    .slice(0, 4)
+    .map((product) => (
+      <div className="product-card" key={product._id}>
+        <div className="product-image">
+          <img src={product.image} alt={product.name} />
+        </div>
 
-{/* <!-- Product Box 2 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={img9} alt="Fruit Bowl"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Fruit Bowl</h3>
-      <p className="product-prize">690 Rs.</p>
-      <button className="shop-btn"  onClick={() =>
-    handleShopNow({
-      name: "Fruit Bowl",
-      price: 690,
-      image: "Fruit Bowl",
-      category: "Kitchen & Dining",
-      description: "Beautiful handmade traditional Fruit Bowl."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+        <div className="product-information">
+          <h3 className="product-title">{product.name}</h3>
 
-  {/* <!-- Product Box 3 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={img19} alt="Tissu Stand"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Tissu Stand</h3>
-      <p className="product-prize">99 Rs.</p>
-      <button className="shop-btn" onClick={() =>
-    handleShopNow({
-      name: "Tissu Stand",
-      price: 99,
-      image: "Tissu Stand",
-      category: "Kitchen & Dining",
-      description: "Beautiful handmade traditional Tissu Stand."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+          <p className="product-prize">
+            {product.price} Rs.
+          </p>
 
-  {/* <!-- Product Box 4 --> */}
-  <div className="product-card">
-    <div className="product-image">
-      <img src={bastarart51} alt="Tea Stand"/>
-    </div>
-    <div className="product-information">
-      <h3 className="product-title">Tea Stand</h3>
-      <p className="product-prize">260 Rs.</p>
-      <button className="shop-btn" onClick={() =>
-    handleShopNow({
-      name: "Tea Stand",
-      price: 260,
-      image: "Tea Stand",
-      category: "Kitchen & Dining",
-      description: "Beautiful handmade Tea Stand."
-    })
-  }>Shop Now</button>
-    </div>
-  </div>
+          <button
+            className="shop-btn"
+            onClick={() => handleShopNow(product)}
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    ))}
 </div>
+      i
+
+  
     
     {/*-------------------------- section four ----------------------*/}
 <div className="section-heading">
